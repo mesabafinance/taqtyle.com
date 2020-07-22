@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+$primary-color: #78BD9B;
+$accent-color: #ffb200;
+$secondary-color: #741236;
+$theme-font: 'Open Sans', Helvetica, sans-serif;
+
+
+.bg-pri {
+    background-color: $primary-color;
+}
+
+.bg-sec {
+    background-color: $secondary-color;
+}
+
+.section {
+    min-height: 30vh;
+}
+
+.links {
+    background: linear-gradient(
+        to right, 
+        #fff 0%, 
+        #fff 66%, 
+        $primary-color 66%, 
+        $primary-color 100%);
+}
+
+#intro {
+    background-image: url(/assets/img/top.jpg);
+    background-position: center right;
+    background-size: 66% auto;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    .tagline {
+        color: $primary-color
+    }
+    margin-bottom: 7em;
+}
+
+#expertise {
+    background-color: $primary-color;
+}

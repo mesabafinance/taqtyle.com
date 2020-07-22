@@ -1,0 +1,33 @@
+items:
+  navigation:
+    items:
+      -
+        url: /test/
+        name: Test
+        sub:
+        bg:
+      -
+        url: /test/
+        name: Test
+
+  expertise:
+
+  team:
+   heading: meet our team
+   text:
+   items:
+    -
+      name: Mark M. Erjavec
+      role: Board Member
+      img: /assets/img/team/mark-erjavec.jpg
+      text: Mark serves as chairman of the Mesaba Finance board of directors as well as fund manager for our proprietary funds.
+      mail: mark@taqtyle.com
+      linkedin: https://www.linkedin.com/in/markerjavec/
+      link: https://www.markerjavec.com
+    -
+      name: Alyssa Greeley
+      role: Independent Deal Analyst
+      mail: alyssa@taqtyle.com
+      text: Experienced sales executive, focuses on our real estate and finance related projects.
+      img: /assets/img/team/alyssa-greeley.jpg
+      linkedin: https://www.linkedin.com/in/alyssagreeley/

@@ -1,0 +1,17 @@
+ .navbar-brand {
+    img {
+        height: 70px;
+    }        
+}
+
+.menu {
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    a:hover {
+        color: darken(white,20%)
+    }
+}
