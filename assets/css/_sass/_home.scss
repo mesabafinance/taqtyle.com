@@ -1,0 +1,36 @@
+.section {
+    min-height: 30vh;
+}
+
+.links {
+    background: linear-gradient(
+        to right, 
+        #fff 0%, 
+        #fff 66%, 
+        $primary-color 66%, 
+        $primary-color 100%);
+}
+
+#intro {
+    background-image: url(/assets/img/top.jpg);
+    background-position: center right;
+    background-size: 66% auto;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    .tagline {
+        color: $primary-color
+    }
+    margin-bottom: 7em;
+}
+
+#expertise {
+    .container {
+        padding-top: 8em;
+        padding-bottom: 8em;
+    }
+    background-color: $primary-color;
+    .box {
+        color: white;
+        border-left: 10px solid lightgrey;
+    }
+}

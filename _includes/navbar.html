@@ -1,0 +1,23 @@
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-sec p-4 menu">
+            {% for i in site.data.general.items.navigation.items %}
+                <p>
+                    <a href="{{i.url}}">{{i.name}}</a>
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <img class="ml-5" alt="{{site.title}}" src="/assets/img/taq-tyle-2.jpg">
+        </a>
+        <div class="bg-sec mr-5 text-white mt-2 pt-2 pb-5">
+            <button aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ml-auto text-white" data-target="#navbarToggleExternalContent" data-toggle="collapse" type="button">
+                Menu
+            </button>
+        </div>
+
+    </nav>
+
+</div>

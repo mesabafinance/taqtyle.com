@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+$primary-color: #78BD9B;
+$accent-color: #ffb200;
+$secondary-color: #741236;
+$theme-font: 'Open Sans', Helvetica, sans-serif;
+
+* {
+    font-family: $theme-font;
+}
+.bg-pri {
+    background-color: $primary-color;
+}
+
+.bg-sec {
+    background-color: $secondary-color;
+}
+
