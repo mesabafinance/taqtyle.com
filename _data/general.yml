@@ -2,13 +2,20 @@ items:
   navigation:
     items:
       -
-        url: /test/
-        name: Test
-        sub:
-        bg:
+        url: /team/
+        name: our team
+        sub: Who we are
+        bg: /assets/img/alyssa-greeley.jpg
       -
-        url: /test/
-        name: Test
+        url: /vision
+        name: our vision
+        sub: What we do
+        bg: /assets/img/building-model.jpg
+      -
+        url: /process
+        name: our process
+        sub: How we do it
+        bg: /assets/img/team.jpg
 
   expertise:
 

@@ -2,19 +2,13 @@
     min-height: 30vh;
 }
 
-.links {
-    background: linear-gradient(
-        to right, 
-        #fff 0%, 
-        #fff 66%, 
-        $primary-color 66%, 
-        $primary-color 100%);
-}
-
 #intro {
     background-image: url(/assets/img/top.jpg);
     background-position: center right;
-    background-size: 66% auto;
+    background-size: cover;
+    @media (min-width: 762px) {
+        background-size: 66% auto;
+    }
     background-repeat: no-repeat;
     min-height: 50vh;
     .tagline {
@@ -32,5 +26,41 @@
     .box {
         color: white;
         border-left: 10px solid lightgrey;
+    }
+}
+
+#links {
+    background: linear-gradient(
+        to right, 
+        #fff 0%, 
+        #fff 66%, 
+        $primary-color 66%, 
+        $primary-color 100%);
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .bg-row {
+        background-position: center right;
+        background-size: 85% auto;
+        background-repeat: no-repeat;
+        min-height: 400px;
+        margin-top: 8em;
+        .box {
+            h3 {
+                color: $primary-color;
+                font-size: 2.25rem;
+            }
+            p {
+                color: gray;
+            }
+
+            .arr {
+                font-size: 3rem;
+                color: $secondary-color;
+            }
+        }
     }
 }
