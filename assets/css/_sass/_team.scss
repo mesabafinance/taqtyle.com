@@ -1,7 +1,10 @@
 #team {
-    background-image: url(/assets/img/team.png);
+    background-image: url(/assets/img/work-space.jpg);
     background-size: cover;
     min-height: 30vh;
+    @media (min-width: 762px) {
+        min-height: 50vh;
+    }
 }
 
 .team-photo {

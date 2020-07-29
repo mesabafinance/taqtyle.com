@@ -1,3 +1,14 @@
+#vision {
+    background-image: url(/assets/img/building-model.jpg);
+    background-size: cover;
+    min-height: 30vh;
+    @media (min-width: 762px) {
+        min-height: 50vh;
+    }
+}
+
+
+
 #img-container {
     min-height: 100vh;
 }

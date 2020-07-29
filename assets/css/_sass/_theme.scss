@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300&display=swap');
 $primary-color: #78BD9B;
 $accent-color: #ffb200;
 $secondary-color: #741236;
-$theme-font: 'Open Sans', Helvetica, sans-serif;
+$theme-font: 'Montserrat', sans-serif;
+$secondary-font: 'Source Serif Pro', serif;
 
 * {
     font-family: $theme-font;
@@ -18,11 +20,24 @@ $theme-font: 'Open Sans', Helvetica, sans-serif;
 h1,h2 {
     color: $primary-color;
     font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    @media (min-width: 762px) {
+        font-size: 3.375rem;
+        letter-spacing: 8px;
+    }
+    
+    // color: #78BD9B;
+    // font-weight: 700;
+    // text-transform: uppercase;
 }
 
 h3,h4,h5 {
     color: $secondary-color;
-    font-weight: 700;
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-family: $secondary-font;
 }
 
 .intro-paragraph {
