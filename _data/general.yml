@@ -2,15 +2,15 @@ items:
   navigation:
     items:
       -
-        url: /team/
+        url: /vision/
         name: our vision
         # sub: Who we are
-        bg: /assets/img/work-space.jpg
+        bg: /assets/img/building-model.jpg
       -
-        url: /vision
+        url: /team
         name: our team
         # sub: What we do
-        bg: /assets/img/building-model.jpg
+        bg: /assets/img/work-space.jpg
       # -
       #   url: /process
       #   name: our process
@@ -31,27 +31,29 @@ items:
       img: /assets/img/team/alyssa-greeley.jpg
       linkedin: https://www.linkedin.com/in/alyssagreeley/
     -
+      name: Dean Dovolis
+      role: Architect 
+      img: /assets/img/team/mark-erjavec.jpg
+      text: Dean founded DJR Architecture in 1985 in the twin cities, Minnesota with an emphasis on affordable housing and community development. Dean continues to evolve the firm into a broad provider of international architectural services while still playing an active role in the local development of the twin cities.
+      mail: mark@taqtyle.com
+      linkedin: https://www.linkedin.com/in/markerjavec/
+      img: /assets/img/team/Dean.jpg
+    -
       name: Mark Erjavec
-      role: Overseeing financial analysis and underwriting for all acquisitions and development. 
+      role: Finance Partner
+      # role: Overseeing financial analysis and underwriting for all acquisitions and development. 
       text: Responsible for strategic planning, risk management, operational oversight and investment decisions.
       mail: mark@taqtyle.com
       linkedin: https://www.linkedin.com/in/markerjavec/
       img: /assets/img/team/mark-headshot.jpg
     -
       name: Leslie Myles
-      role: Board Member
+      role: Construction Manager
       text: Mark serves as chairman of the Mesaba Finance board of directors as well as fund manager for our proprietary funds.
       mail: mark@taqtyle.com
       linkedin: https://www.linkedin.com/in/markerjavec/
       img: /assets/img/team/Leslie-myles-contracter.jpg
-    -
-      name: Dean Dovolis
-      role: Board Member
-      img: /assets/img/team/mark-erjavec.jpg
-      text: Mark serves as chairman of the Mesaba Finance board of directors as well as fund manager for our proprietary funds.
-      mail: mark@taqtyle.com
-      linkedin: https://www.linkedin.com/in/markerjavec/
-      img: /assets/img/team/Dean.jpg
+   
 
   vision:
     heading: our vision
