@@ -3,7 +3,7 @@
 }
 
 #intro {
-    background-image: url(/assets/img/top.jpg);
+    background-image: url(/assets/img/highland-bridge.jpg);
     background-position: center right;
     background-size: cover;
     @media (min-width: 762px) {
@@ -12,7 +12,22 @@
     background-repeat: no-repeat;
     min-height: 50vh;
     margin-bottom: 7em;
+
+    h1:nth-of-type(2) {
+        @media (min-width: 762px) {
+            display: none;
+        }
+    }
+    h1:nth-of-type(1) {
+        display: none;
+        @media (min-width: 762px) {
+            display: initial;
+    }
+      
 }
+
+
+
 
 #expertise {
     .container {
@@ -22,7 +37,7 @@
     background-color: $primary-color;
     .box {
         color: white;
-        border-left: 10px solid lightgrey;
+        border-left: 16px solid white;
     }
 }
 

@@ -1,14 +1,33 @@
+ .navbar{
+    //  position: fixed;
+     width: 100%;
+ }
+
+ 
+ .navbar-scroll-effect {
+     justify-content: flex-end!important;
+ }
+
+ .navbar-toggler {
+    font: initial;
+ }
+
+
  .navbar-brand {
+    //  position: absolute;
     img {
         height: 70px;
-    }        
+    } 
+    
 }
 
 .menu {
+    
     a {
         color: white;
         text-decoration: none;
         font-size: 1.2rem;
+        padding: 35px 0 15px;
     }
 
     a:hover {

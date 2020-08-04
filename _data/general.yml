@@ -3,13 +3,13 @@ items:
     items:
       -
         url: /team/
-        name: our team
-        sub: Who we are
-        bg: /assets/img/alyssa-greeley.jpg
+        name: our vision
+        # sub: Who we are
+        bg: /assets/img/work-space.jpg
       -
         url: /vision
-        name: our vision
-        sub: What we do
+        name: our team
+        # sub: What we do
         bg: /assets/img/building-model.jpg
       # -
       #   url: /process
@@ -25,11 +25,18 @@ items:
    items:
     -
       name: Alyssa Greeley
-      role: Independent Deal Analyst
+      role: Director of Acquisitions and Development
       mail: alyssa@taqtyle.com
-      text: Experienced sales executive, focuses on our real estate and finance related projects.
+      text: Directs operational aspects of all real estate activities and projects. Develops and implements short and long-term plans to ensure effective and profitable developments. Builds positive relationships and works collaboratively with strategic partners to ensure all projects meet the objectives of all stakeholders. Holds a Colorado Real Estate License and is a designated Realtor.
       img: /assets/img/team/alyssa-greeley.jpg
       linkedin: https://www.linkedin.com/in/alyssagreeley/
+    -
+      name: Mark Erjavec
+      role: Overseeing financial analysis and underwriting for all acquisitions and development. 
+      text: Responsible for strategic planning, risk management, operational oversight and investment decisions.
+      mail: mark@taqtyle.com
+      linkedin: https://www.linkedin.com/in/markerjavec/
+      img: /assets/img/team/mark-headshot.jpg
     -
       name: Leslie Myles
       role: Board Member
