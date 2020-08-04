@@ -13,16 +13,16 @@
     min-height: 50vh;
     margin-bottom: 7em;
 
-    h1:nth-of-type(2) {
-        @media (min-width: 762px) {
-            display: none;
-        }
-    }
-    h1:nth-of-type() {
-        display: none;
-        @media (min-width: 762px) {
-            display: initial;
-    }
+    // h1:nth-of-type(2) {
+    //     @media (min-width: 762px) {
+    //         display: none;
+    //     }
+    // }
+    // h1:nth-of-type() {
+    //     display: none;
+    //     @media (min-width: 762px) {
+    //         display: initial;
+    // }
       
 }
 
