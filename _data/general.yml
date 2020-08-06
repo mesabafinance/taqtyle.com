@@ -5,7 +5,7 @@ items:
         url: /vision/
         name: our vision
         # sub: Who we are
-        bg: /assets/img/building-model.jpg
+        bg: /assets/img/dean-building.png
       -
         url: /team
         name: our team
@@ -28,7 +28,7 @@ items:
       role: Director of Acquisitions and Development
       mail: alyssa@taqtyle.com
       text: Directs operational aspects of all real estate activities and projects. Develops and implements short and long-term plans to ensure effective and profitable developments. Builds positive relationships and works collaboratively with strategic partners to ensure all projects meet the objectives of all stakeholders. Holds a Colorado Real Estate License and is a designated Realtor.
-      img: /assets/img/team/alyssa-greeley.jpg
+      img: /assets/img/team/alyssa-greeley.png
       linkedin: https://www.linkedin.com/in/alyssagreeley/
     -
       name: Dean Dovolis
@@ -45,7 +45,7 @@ items:
       text: Responsible for strategic planning, risk management, operational oversight and investment decisions.
       mail: mark@taqtyle.com
       linkedin: https://www.linkedin.com/in/markerjavec/
-      img: /assets/img/team/mark-headshot.jpg
+      img: /assets/img/team/mark-headshot.png
     -
       name: Leslie Myles
       role: Construction Manager

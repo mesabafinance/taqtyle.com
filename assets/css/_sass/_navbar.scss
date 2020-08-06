@@ -1,6 +1,14 @@
  .navbar{
     //  position: fixed;
      width: 100%;
+
+     .bg-sec{
+        height: 75px;
+
+        @media (min-width: 762px) {
+            height: 135px;
+        }
+     }
  }
 
  
@@ -9,7 +17,13 @@
  }
 
  .navbar-toggler {
-    font: initial;
+     letter-spacing: 2px;
+     font-size: .55rem;
+
+     @media (min-width: 762px) {
+       font-size: .75rem;
+     }
+    // font: initial;
  }
 
 
@@ -27,7 +41,7 @@
         color: white;
         text-decoration: none;
         font-size: 1.2rem;
-        padding: 35px 0 15px;
+        // padding: 35px 0 15px;
     }
 
     a:hover {
