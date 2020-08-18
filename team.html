@@ -7,7 +7,7 @@ permalink: /team/index.html
 <div class="section d-flex align-items-center">
     <div class="container">
         <div class="row page-header">
-            <div class="col-md-6 offset-md-2">
+            <div class="col-md-6 offset-md-1">
                 <h1>{{data.heading}}</h1>
             </div>
             <div class="col-md-4 offset-md-6 intro-paragraph">
@@ -27,15 +27,15 @@ permalink: /team/index.html
             {% assign test = forloop.index|modulo: 2 %}
 
             <div class="row pb-5 mb-5">
-                <div class="col-md-7 order-xs-last bg-white p-5">
+                <div class="col-lg-7 bg-white p-5">
                     <div class="m-5">
                         <h4 class="mb-0">{{i.name}}</h4>
                         <p class="text-dark font-weight-bold">{{i.role}}</p>
                         <p class="mt-4">{{i.text}}</p>
-                        <a href="{{i.website}}">Website Link</a>
+                        <a href="{{i.website}}">{{i.website}}</a>
                     </div>
                 </div>
-                <div class="col-md-5 team-photo{% if test == 0 %} order-sm-first{% endif %}" style="background-image: url({{i.img}});"></div>
+                <div class="col-lg-5 team-photo{% if test == 0 %} order-sm-first{% endif %}" style="background-image: url({{i.img}});"></div>
             </div>
         {% endfor %}
     </div>

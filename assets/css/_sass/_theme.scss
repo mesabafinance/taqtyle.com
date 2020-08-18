@@ -42,14 +42,24 @@ h3,h4,h5 {
 
 .intro-paragraph {
     color: darkgray;
-    @media (min-width: 762px) {
+    @media (min-width: 762px) { 
         bottom: -150px;
         position: relative;
         min-height: 300px;    
-        border-left: $primary-color 20px solid;    
+        border-left: $primary-color 20px solid; 
+        margin-bottom: 6rem; 
+    }
+    p {
+        @media (min-width: 762px) {
+            width: 19rem;  
+        }
     }
 }
 
 .page-header {
-    padding-top: 14rem;
+    padding-top: 10rem;
+    @media (min-width: 762px) {
+        padding-top: 17rem;
+    }
+
 }
