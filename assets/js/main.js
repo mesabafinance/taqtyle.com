@@ -19,3 +19,15 @@ $(window).scroll(function() {
     }
   });
 
+
+  $(".menu-icon").click(function(){
+    $(".sidebar").toggleClass("active")
+  });
+
+  
+  
+  $(".menu li a").click(function(){
+    $(".menu-icon").toggleClass("active")
+    $(".sidebar").toggleClass("active")
+  });
+

@@ -7,7 +7,7 @@ permalink: /team/index.html
 <div class="section d-flex align-items-center">
     <div class="container">
         <div class="row page-header">
-            <div class="col-md-6 offset-md-1">
+            <div class="col offset-md-1">
                 <h1>{{data.heading}}</h1>
             </div>
             <div class="col-md-4 offset-md-6 intro-paragraph">
@@ -22,10 +22,10 @@ permalink: /team/index.html
 </div>
 
 <div class="section bg-light">
-    <div class="container pt-5">
+    <div class="container team-container">
         {% for i in data.items %}
             {% assign test = forloop.index|modulo: 2 %}
-
+            {% if forloop.index == 3 %}<h2 class="partners">Partners</h2>{% endif %}
             <div class="row pb-5 mb-5">
                 <div class="col-lg-7 bg-white p-5">
                     <div class="m-5">

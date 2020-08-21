@@ -1,4 +1,42 @@
 <div class="pos-f-t fixed-top">
+    <div class="sidebar">
+        <div id="hide-icon" class=" menu-icon mr-sm-5 text-white">
+            <p class="hide-icon p-2 pt-md-4 pb-5">
+                CLOSE
+            </p>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="/">home</a>
+            </li>
+            {% for i in site.data.general.items.navigation.items %}
+                <li>
+                    <a href="{{i.url}}">{{i.name}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    
+        <nav class="navbar">
+            <a class="navbar-brand logo" href="/">
+                <img class="ml-sm-5" alt="{{site.title}}" src="/assets/img/taqtyle-logo.png">
+            </a>
+            <div class="menu-icon bg-sec mr-sm-5 text-white p-2 pt-md-4 pb-5">
+                <p>
+                    MENU
+                </p>
+            </div>
+    
+        </nav>
+    
+
+</div>
+
+
+
+
+<!-- <div class="pos-f-t fixed-top">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-sec p-4 menu">
             <p>
@@ -26,4 +64,4 @@
         </nav>
     
 
-</div>
+</div> -->
