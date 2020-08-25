@@ -29,13 +29,14 @@ items:
       mail: alyssa@taqtyle.com
       text: Alyssa directs all operational aspects of Taqtyle’s real estate activities and projects. She holds a Colorado Real Estate License and is a designated Realtor with multiple years of experience in the Colorado real estate market. Alyssa ensures effective and profitable developments by building positive relationships and working closely with strategic partners.
       # website: https://www.emergeconstruction.com/
-      img: /assets/img/team/alyssa-greeley.png
+      img: /assets/img/team/alyssa-greeley.jpg
       linkedin: https://www.linkedin.com/in/alyssagreeley/
     -
       name: Dean Dovolis
       role: Architect 
-      img: /assets/img/team/mark-erjavec.jpg
+      # img: /assets/img/team/mark-erjavec.jpg
       text: Dean founded DJR Architecture in 1985 in the twin cities, Minnesota with an emphasis on affordable housing and community development. Dean continues to evolve the firm into a broad provider of international architectural services while still playing an active role in the local development of the twin cities.
+      website-name: djrarch.com
       website: https://djrarch.com/
       mail: mark@taqtyle.com
       linkedin: https://www.linkedin.com/in/markerjavec/
@@ -45,15 +46,17 @@ items:
       role: Finance Partner
       # role: Overseeing financial analysis and underwriting for all acquisitions and development. 
       text: Mark is a serial entrepreneur, investor, and fund manager with over 20 years of experience in finance and real estate. For Taqtyle, Mark takes care of strategic planning, risk management, operational oversight and investment decisions.
+      website-name: mesabafinance.com
       website: https://mesabafinance.com 
       mail: mark@taqtyle.com
       linkedin: https://www.linkedin.com/in/markerjavec/
-      img: /assets/img/team/mark-headshot.png
+      img: /assets/img/team/mark-headshot.jpg
     -
       name: Leslie Myles
       role: Construction Partner
       text: Mark serves as chairman of the Mesaba Finance board of directors as well as fund manager for our proprietary funds.
-      website:  https://www.emergeconstruction.com/
+      website-name: emergeconstruction.com
+      website: https://www.emergeconstruction.com/
       mail: mark@taqtyle.com
       linkedin: https://www.linkedin.com/in/markerjavec/
       img: /assets/img/team/Leslie-myles-contracter.jpg
