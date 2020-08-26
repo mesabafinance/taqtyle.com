@@ -5,10 +5,10 @@ items:
         url: /vision/
         name: our vision
         bg: /assets/img/dean-building.png
-      -
-        url: /process
-        name: our process
-        bg: /assets/img/team.jpg
+      # -
+      #   url: /process
+      #   name: our process
+      #   bg: /assets/img/team.jpg
       -
         url: /team/
         name: our team
@@ -57,22 +57,23 @@ items:
     -
       name: Leslie Myles
       role: Construction Partner
-      text: Mark serves as chairman of the Mesaba Finance board of directors as well as fund manager for our proprietary funds.
+      text: 
       website-name: emergeconstruction.com
       website: https://www.emergeconstruction.com/
       mail: mark@taqtyle.com
       linkedin: https://www.linkedin.com/in/markerjavec/
       img: /assets/img/team/Leslie-myles-contracter.jpg
    
-
   vision:
     heading: our vision
-    paragraph: To Develop a Vertical, Micro-Apartments community designed for a more sustainable lifestyle. With emphasis on lifestyle over space, we provide a more efficient way to live.
-  
+    paragraph: We envision a neighborhood where new residential real estate integrates with the existing architecture yet provides the future of modern, urban living. We want to be a vital part of the community we build in.
+    paragraph2: Our concepts include developing vertical, micro-apartments communities designed for a more sustainable lifestyle. With an emphasis on lifestyle over space, we aspire to provide a more efficient way to live in LoHi.
+    subscribe:
+      heading: Keep in touch
+      paragraph: Sign up for our mailing list and get the latest news and developments directly to your inbox.
   process:
     heading: our development process
     paragraph: 
-
 
   contact:
     heading: contact
