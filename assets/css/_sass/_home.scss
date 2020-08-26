@@ -12,7 +12,6 @@
     }
 
     .hero-img {
-        // background-image: url(/assets/img/bridgeo3.jpg);
         position: absolute;
         background-position: center right;
         background-size: cover;
@@ -32,77 +31,10 @@
             padding: 100px 70px 100px 0;
                     
         }
-    }
-    // .bg-white {
-    //     position: relative;
-    //     padding: 40px 20px;
-    //     @media (min-width: 762px) {
-    //         padding: 40px 55px;
-    //         margin-top: 6rem;
-    //     }
-
-    //     h3 {
-    //         margin-top: 10px;
-    //         @media (min-width: 762px) {
-    //             margin-top: 38px;
-    //         }  
-    //     }  
-    // }    
+    } 
 }
 
-
-
-
-
-// #intro {
-//     background-image: url(/assets/img/bridgeo3.jpg);
-//     background-position: center right;
-//     background-size: cover;
-//     margin: 65px 0;
-
-//     @media (min-width: 762px) {
-//         background-size: 90% auto;
-//         margin: 100px 0;
-//         padding-bottom: 200px;
-//     }
-
-//     @media (min-width: 1024px) {
-//         background-size: 76% auto;
-        
-//     }
-//     background-repeat: no-repeat;
-//     min-height: 50vh;
-//     // margin-bottom: 7em;
-//     // h1:nth-of-type(2) {
-//     //     @media (min-width: 762px) {
-//     //         display: none;
-//     //     }
-//     // }
-//     // h1:nth-of-type() {
-//     //     display: none;
-//     //     @media (min-width: 762px) {
-//     //         display: initial;
-//     // }
-//     .bg-white {
-//         padding: 40px 20px;
-//         @media (min-width: 762px) {
-//             padding: 40px 55px;
-//             margin-top: 6rem;
-//         }
-
-//         h3 {
-//             margin-top: 10px;
-//             @media (min-width: 762px) {
-//                 margin-top: 38px;
-//             }  
-//         }  
-//     }    
-// }
-
-
-
-
-#expertise {
+#boilerplate {
     .container {
         padding-top: 8em;
         padding-bottom: 8em;
@@ -116,6 +48,10 @@
     h2 {
         color: white;
         font-size: 2.375rem;
+
+        @media (max-width: 762px) {
+            font-size: 1.25rem;
+        }
     }
 }
 

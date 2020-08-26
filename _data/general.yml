@@ -4,23 +4,26 @@ items:
       -
         url: /vision/
         name: our vision
-        # sub: Who we are
         bg: /assets/img/dean-building.png
+      -
+        url: /process
+        name: our process
+        bg: /assets/img/team.jpg
       -
         url: /team/
         name: our team
-        # sub: What we do
         bg: /assets/img/work-space.jpg
-      # -
-      #   url: /process
-      #   name: our process
-      #   sub: How we do it
-      #   bg: /assets/img/team.jpg
       -
         url: /contact/
         name: contact
         bg: /assets/img/contact.jpg  
-  expertise:
+  
+  home:
+    heading: Reimagining urban living in LoHi
+    subheading: A community where living and working combine with luxury
+    paragraph: 
+      - LoHi features some of Denver's greatest architecture, a vibrant scene of local restaurants and shops, as well as fantastic views of Denver landmarks such as the Highland Bridge.
+      - Taqtyle made it its mission to promote and foster the LoHi community by developing vanguard real estate projects that both fit into and advance the neighborhood.
 
   team:
    heading: our team
@@ -31,13 +34,11 @@ items:
       role: Director of Acquisitions and Development
       mail: alyssa@taqtyle.com
       text: Alyssa directs all operational aspects of Taqtyle’s real estate activities and projects. She holds a Colorado Real Estate License and is a designated Realtor with multiple years of experience in the Colorado real estate market. Alyssa ensures effective and profitable developments by building positive relationships and working closely with strategic partners.
-      # website: https://www.emergeconstruction.com/
       img: /assets/img/team/alyssa-greeley.jpg
       linkedin: https://www.linkedin.com/in/alyssagreeley/
     -
       name: Dean Dovolis
       role: Architect 
-      # img: /assets/img/team/mark-erjavec.jpg
       text: Dean founded DJR Architecture in 1985 in the twin cities, Minnesota with an emphasis on affordable housing and community development. Dean continues to evolve the firm into a broad provider of international architectural services while still playing an active role in the local development of the twin cities.
       website-name: djrarch.com
       website: https://djrarch.com/
@@ -47,7 +48,6 @@ items:
     -
       name: Mark Erjavec
       role: Finance Partner
-      # role: Overseeing financial analysis and underwriting for all acquisitions and development. 
       text: Mark is a serial entrepreneur, investor, and fund manager with over 20 years of experience in finance and real estate. For Taqtyle, Mark takes care of strategic planning, risk management, operational oversight and investment decisions.
       website-name: mesabafinance.com
       website: https://mesabafinance.com 
@@ -69,6 +69,11 @@ items:
     heading: our vision
     paragraph: To Develop a Vertical, Micro-Apartments community designed for a more sustainable lifestyle. With emphasis on lifestyle over space, we provide a more efficient way to live.
   
+  process:
+    heading: our development process
+    paragraph: 
+
+
   contact:
     heading: contact
     paragraph: Our team is excited to hear from you. Reach out to us any time via phone or simply send us a message below. We will get back to you shortly.
