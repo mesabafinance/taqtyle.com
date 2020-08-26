@@ -21,57 +21,14 @@ contact: false
 <div class="section bg-light">
     <div class="container contact-container py-5 ,t-5">
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6">
-                <div class="py-5 d-none" id="contactSuccess">
-                    <h5>Thank you for your message. We will be in touch shortly.</h5>
-                </div>
-                <form action="https://submit-form.com/4lpxdbwUMM8xdqtb68vS6" class="mt-5" id="contactForm">
-                    <input name="_redirect" type="hidden" value="localhost:4000/contact/index.html?contact=sent">
-                    <div class="form-group">
-                        <label for="contactFormType">I am a...<sup>*</sup>
-                        </label>
-                        <select class="form-control" id="contactFormType" name="Category">
-                            <option disabled selected value="">Please choose one...</option>
-                            <option>LoHi Resident</option>
-                            <option>Contractor</option>
-                            <option>Investor</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <div class="mb-2">
-                            <input class="email form-control" id="contactFormEmail" name="email" placeholder="Email address *" required type="email" value="">
-                            <label class="form-hide" for="contactFormEmail">Email address</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="mb-2">
-                            <input class="form-control" id="contactFormFirstName" name="first_name" placeholder="First name *" required type="text" value="">
-                            <label class="form-hide" for="contactFormFirstName">First name</label>
-
-                        </div>
-                        <div class="">
-                            <input class="form-control" id="contactFormLastName" name="last_name" placeholder="Last name *" required type="text" value="">
-                            <label class="form-hide" for="contactFormLastName">Last name</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="">
-                            <textarea class="form-control" id="contactFormMessage" name="message" placeholder="Enter your message here... *" required rows="5"></textarea>
-                            <label class="form-hide" for="contactFormMessage">Message</label>
-                        </div>
-
-                    </div>
-
-                    <input autocomplete="off" name="question" style="display:none" tabindex="-1" type="checkbox"/>
-                    <div class="g-recaptcha" data-sitekey="6LfWJcMZAAAAACq5hNj-sYNgnmXWoHgwnkwU9mc8"></div>
-                    <br/>
-                    <div class="clear mt-4">
-                        <button class="btn cta-btn" id="send-button" name="send" type="submit">Send</button>
-                    </div>
-                </form>
+            <div class="col-md-6 pt-5 mt-5">
+                <script charset="utf-8" src="//js.hsforms.net/forms/shell.js" type="text/javascript"></script>
+                <script>
+                  hbspt.forms.create({
+                    portalId: "8154313",
+                    formId: "b4d1af62-fd3b-44f1-ae9b-05e926e4500b"
+                });
+                </script>
             </div>
         </div>
     </div>
