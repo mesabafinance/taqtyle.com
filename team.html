@@ -25,8 +25,10 @@ permalink: /team/index.html
     <div class="container team-container">
         {% for i in data.items %}
             {% assign test = forloop.index|modulo: 2 %}
-            {% if forloop.index == 3 %}<h2 class="partners">Partners</h2>{% endif %}
-            <div class="row pb-5 mb-5">
+            {% if forloop.index == 3 %}
+                <h2 class="partners">Partners</h2>
+            {% endif %}
+            <div class="row pb-5 mt-5">
                 <div class="col-lg-7 bg-white p-5">
                     <div class="m-5">
                         <h4 class="mb-0">{{i.name}}</h4>

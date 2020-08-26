@@ -7,7 +7,7 @@ items:
         # sub: Who we are
         bg: /assets/img/dean-building.png
       -
-        url: /team
+        url: /team/
         name: our team
         # sub: What we do
         bg: /assets/img/work-space.jpg
@@ -16,7 +16,10 @@ items:
       #   name: our process
       #   sub: How we do it
       #   bg: /assets/img/team.jpg
-
+      -
+        url: /contact/
+        name: contact
+        bg: /assets/img/contact.jpg  
   expertise:
 
   team:
@@ -62,3 +65,11 @@ items:
   vision:
     heading: our vision
     paragraph: Coming soon!
+  
+  contact:
+    heading: contact
+    paragraph: Our team is excited to hear from you. Reach out to us any time via phone or simply send us a message below. We will get back to you shortly.
+    street: 2500 17Th Street
+    city: Denver, CO 80211
+    phone: (720) 780-5665
+    mail: hello@taqtyle.com
