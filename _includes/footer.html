@@ -1,4 +1,4 @@
-{% unless page.contact == false %}
+{% unless page.contact %}
     <div class="bg-sec" id="contact-footer">
         <div class="container py-5">
             <a href="/contact/">
@@ -15,16 +15,18 @@
 
 <div class="bg-pri d-flex align-items-end footer pt-5" id="footer" style="min-height: 25vh">
     <div class="container py-5">
-        <div class="row p-5 bg-white text-center">
-            <div class="col-sm-4">
-                <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/pin.svg">
-                <p>
-                    {{site.data.general.items.contact.street}}
-                    <br>
-                    {{site.data.general.items.contact.city}}
-                </p>
+        <div class="row p-5 bg-white text-center justify-content-center">
+            {% if page.contact %}
+                <div class="col-sm-4">
+                    <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/pin.svg">
+                    <p>
+                        {{site.data.general.items.contact.street}}
+                        <br>
+                        {{site.data.general.items.contact.city}}
+                    </p>
 
-            </div>
+                </div>
+            {% endif %}
             <div class="col-sm-4">
                 <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/mail.svg">
                 <p>
