@@ -1,49 +1,56 @@
 ---
 layout: base
 ---
+
+{% assign data = site.data.general.items.home %}
+
 <div class="section d-flex align-items-center" id="intro">
     <div class="container">
-        <div class="row">
-            <div class="bg-white p-5 m-5">
-                <h2>building a better LoHi</h2>
-                <h4>Tangible investments in Real Estate</h4>
+        <div class="hero-img" style="background-image: url(assets/img/bridgeo3.jpg);"></div>
+        <div class="row flex-column">
+            <div class="bg-white col-9 col-md-7 hero-text">
+                <h1 class="header-desktop">{{data.heading}}</h1>
             </div>
         </div>
     </div>
 </div>
 
-<div class="section mt-5" id="vision">
+<div class="section mt-5" id="boilerplate">
     <div class="container">
         <div class="row">
-            <div class="box pl-4 col-md-6 offset-md-2">
-                <h2>our vision</h2>
-                <p class="mt-3">Laughing Husky dog sleds is the premium builder of hand-crafted dog sleds for all your
-                    mushing needs.</p>
+            <div class="box pl-sm-4 pl-md-5 col-md-8 offset-md-2">
+                <h2 class="mb-3">{{data.subheading}}</h2>
+                {% for i in data.paragraph %}
+                    <p>{{i}}</p>
+                {% endfor %}
             </div>
 
         </div>
     </div>
 </div>
 
-<div class="section" id="links">
+<div class="section pb-5" id="links">
     <div class="container py-5">
         {% for i in site.data.general.items.navigation.items %}
-        <div class="row bg-row d-flex align-items-center" style="background-image: url({{i.bg}});">
-            <div class="col-md-6">
-                <a href="{{i.url}}">
-                    <div class="box bg-white p-2 m-2 p-sm-5 m-sm-5">
-                        <div class="row">
-                            <div class="col-8 col-sm-10">
-                                <h3>{{i.name}}</h3>
+            {% unless i.name == "contact" %}
+                <div class="row bg-row d-flex align-items-center" style="background-image: url({{i.bg}});">
+                    <div class="col-md-6">
+                        <a href="{{i.url}}">
+                            <div class="box bg-white p-2 m-2 p-sm-5 m-sm-5">
+                                <div class="row">
+                                    <div class="col-8 col-sm-10">
+                                        <h3>{{i.name}}</h3>
+                                        <p>{{i.sub}}</p>
+                                    </div>
+                                    <div class="col-4 col-sm-2">
+                                        <span class="arr">&rarr;</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-4 col-sm-2">
-                                <span class="arr">&rarr;</span>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-        </div>
+                </div>
+            {% endunless %}
         {% endfor %}
     </div>
 </div>

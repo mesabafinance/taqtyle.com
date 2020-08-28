@@ -3,4 +3,18 @@
         color: $primary-color;
         font-weight: 700;
     }
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+#contact-footer {
+    a {
+        text-decoration: none;
+    }
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
 }

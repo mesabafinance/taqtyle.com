@@ -1,17 +1,116 @@
+ .navbar{
+    //  position: fixed;
+     width: 100%;
+
+     .bg-sec{
+        height: 75px;
+
+        @media (min-width: 762px) {
+            height: 135px;
+        }
+     }
+ }
+ 
+ .navbar-scroll-effect {
+     justify-content: flex-end!important;
+ }
+
+
  .navbar-brand {
+    
+    //  position: absolute;
     img {
-        height: 70px;
-    }        
+        height: 35px;
+
+        @media (min-width: 762px) {
+            height: 48px;
+        }   
+    } 
+    
 }
 
-.menu {
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-    }
 
-    a:hover {
-        color: darken(white,20%)
+.menu-icon {
+    right: 0;
+    letter-spacing: 2px;
+    font-size: .55rem;
+     @media (min-width: 762px) {
+       font-size: .75rem;
+     }
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+#hide-icon {
+    
+    display: flex;
+    justify-content: flex-end;
+
+    p {
+        height: 75px;
+        background-color: #712e45;
+        @media (min-width: 762px) {
+            height: 135px;
+        }
+        
     }
 }
+
+
+.sidebar {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 50vw;
+    height: 100vh;
+    background: $secondary-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+    padding: 0px 20px 20px;
+    box-sizing: border-box;
+
+    @media (min-width: 762px) {
+        padding: 0px 25px 25px;
+        width: 40vw;
+    }
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar .menu {
+    margin: 0;
+    padding: 120px 0;
+}
+
+.sidebar .menu li {
+    list-style: none;
+    
+}
+
+.sidebar .menu li a{
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 26px 0;
+    color: white;
+    letter-spacing: .05rem;
+    font-size: 21px;
+    transition: .4s cubic-bezier(0.33, 0.69, 1, 1);
+    
+    @media (min-width: 762px) {
+        font-size: 35px;
+        padding: 26px 19.95323461%;	
+    }
+
+    &:hover {
+        color: darken(white,30%)
+    }
+    
+}
+

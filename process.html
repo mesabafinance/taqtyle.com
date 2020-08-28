@@ -1,6 +1,32 @@
 ---
 layout: base
 permalink: /process/index.html
+published: false
 ---
 
-<h1>Process</h1>
+{% assign data = site.data.general.items.process %}
+
+<div class="section d-flex align-items-center">
+    <div class="container">
+        <div class="row page-header">
+            <div class="col-md-6 offset-md-1">
+                <h1>{{data.heading}}</h1>
+            </div>
+            <div class="col-md-4 offset-md-6 intro-paragraph">
+                <p class="pl-sm-4">{{data.paragraph}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid" id="process"></div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6 pt-5 mt-5"></div>
+        </div>
+    </div>
+</div> 

@@ -1,14 +1,46 @@
-<div class="bg-pri d-flex align-items-end footer" id="footer" style="min-height: 35vh">
-    <div class="container pb-5">
-        <div class="p-5 bg-white">
-            <p>+1 234 567 8998</p>
-            <p>hello@taqtyle.com</p>
+{% unless page.contact == false %}
+    <div class="bg-sec" id="contact-footer">
+        <div class="container py-5">
+            <a href="/contact/">
+                <div class="ml-auto text-center">
+                    <h3 class="text-white">contact
+                        <span class="arr">→</span>
+                    </h3>
+
+                </div>
+            </a>
+        </div>
+    </div>
+{% endunless %}
+
+<div class="bg-pri d-flex align-items-end footer pt-5" id="footer" style="min-height: 25vh">
+    <div class="container py-5">
+        <div class="row p-5 bg-white text-center">
+            <div class="col-sm-4">
+                <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/pin.svg">
+                <p>
+                    {{site.data.general.items.contact.street}}
+                    <br>
+                    {{site.data.general.items.contact.city}}
+                </p>
+
+            </div>
+            <div class="col-sm-4">
+                <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/mail.svg">
+                <p>
+                    <a href="mailto:{{site.data.general.items.contact.mail}}">{{site.data.general.items.contact.mail}}</a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/phone.svg">
+                <p>{{site.data.general.items.contact.phone}}</p>
+            </div>
         </div>
     </div>
 </div>
 
 
-<script type="text/javascript" src="{{'/assets/js/jquery-3.4.1.min.js'|relative_url}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{'/assets/js/bootstrap.min.js'|relative_url}}"></script>
 <script type="text/javascript" src="{{'/assets/js/ekko.js'|relative_url}}"></script>
 <script type="text/javascript" src="{{'/assets/js/main.js'|relative_url}}"></script>

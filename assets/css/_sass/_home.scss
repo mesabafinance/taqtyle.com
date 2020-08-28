@@ -1,20 +1,40 @@
 .section {
-    min-height: 30vh;
+    min-height: 20vh;
 }
+
+
 
 #intro {
-    background-image: url(/assets/img/top.jpg);
-    background-position: center right;
-    background-size: cover;
+    padding-top: 4rem;
+    position: relative;
     @media (min-width: 762px) {
-        background-size: 66% auto;
+        padding-top: 6rem;
     }
-    background-repeat: no-repeat;
-    min-height: 50vh;
-    margin-bottom: 7em;
+
+    .hero-img {
+        position: absolute;
+        background-position: center right;
+        background-size: cover;
+        height: 100%;
+        right: 0;
+        width: calc((1100px * .75) + ((100% - 1100px) / 2));
+    }
+
+    .hero-text{
+        padding: 40px 20px;
+        
+        @media (min-width: 762px) {
+            padding: 80px 70px 80px 0;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 100px 70px 100px 0;
+                    
+        }
+    } 
 }
 
-#expertise {
+#boilerplate {
     .container {
         padding-top: 8em;
         padding-bottom: 8em;
@@ -22,7 +42,16 @@
     background-color: $primary-color;
     .box {
         color: white;
-        border-left: 10px solid lightgrey;
+        border-left: 16px solid white;
+    }
+
+    h2 {
+        color: white;
+        font-size: 2.375rem;
+
+        @media (max-width: 762px) {
+            font-size: 1.25rem;
+        }
     }
 }
 
@@ -44,7 +73,9 @@
         background-size: 85% auto;
         background-repeat: no-repeat;
         min-height: 400px;
-        margin-top: 8em;
+        @media (min-width: 762px) {
+            margin-top: 8em;
+        }
         .box {
             h3 {
                 color: $primary-color;

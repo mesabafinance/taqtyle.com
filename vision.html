@@ -7,8 +7,8 @@ permalink: /vision/index.html
 
 <div class="section d-flex align-items-center">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-2">
+        <div class="row page-header">
+            <div class="col-md-6 offset-md-1">
                 <h1>{{data.heading}}</h1>
             </div>
             <div class="col-md-4 offset-md-6 intro-paragraph">
@@ -22,16 +22,31 @@ permalink: /vision/index.html
     <div class="container-fluid" id="vision"></div>
 </div>
 
-<div class="section" id="img-container">
-    <div class="container">
-        <div class="row mt-5">
-            {% for i in (1..9) %}
-                <div class="col-md-4 mb-5 fades" id="test{{i}}" style="display: none">
-                    <a data-gallery="lohi" data-toggle="lightbox" href="/assets/img/vision/lohi.jpg">
-                        <img alt="Lohi" class="img-fluid img-vision " src="/assets/img/vision/lohi.jpg">
-                    </a>
-                </div>
-            {% endfor %}
+<div class="section">
+    <div class="container py-5 mt-5">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6">
+                <p>{{data.paragraph2}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="container py-5 mb-5 text-center">
+        <h2>{{data.subscribe.heading}}</h2>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6">
+                <p>{{data.subscribe.paragraph}}</p>
+                <script charset="utf-8" src="//js.hsforms.net/forms/shell.js" type="text/javascript"></script>
+                <script>
+                    hbspt.forms.create({
+                        portalId: "8154313",
+                        formId: "d7810e3f-9284-4e41-95fc-fb031aec2b79"
+                    });
+                </script>
+            </div>
         </div>
     </div>
 </div> 

@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300&display=swap');
 $primary-color: #78BD9B;
 $accent-color: #ffb200;
-$secondary-color: #741236;
+// $secondary-color: #C69DAD;
+$secondary-color: #741335;
 $theme-font: 'Montserrat', sans-serif;
 $secondary-font: 'Source Serif Pro', serif;
 
 * {
     font-family: $theme-font;
+}
+
+body {
+    overflow-x: hidden;
 }
 .bg-pri {
     background-color: $primary-color;
@@ -36,16 +41,49 @@ h1,h2 {
 h3,h4,h5 {
     color: $secondary-color;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: $secondary-font;
+}
+
+p{
+    line-height: 160%;
 }
 
 .intro-paragraph {
     color: darkgray;
-    @media (min-width: 762px) {
-        bottom: -150px;
+    // line-height: 160%;
+    @media (min-width: 762px) { 
+        bottom: -71px;
         position: relative;
-        min-height: 300px;    
-        border-left: $primary-color 20px solid;    
+        min-height: 300px;
+        border-left: #78BD9B 16px solid;
+       
+        // /* margin-bottom: 6rem; 
     }
+
+    p {
+        @media (min-width: 762px) {
+            width: 19rem;   
+        }
+    }
+    p {
+        @media (min-width: 1024px) {
+            width: 29rem; 
+        }
+    }
+}
+   
+
+.page-header {
+    padding-top: 10rem;
+    @media (min-width: 762px) {
+        padding-top: 14.5rem;
+        
+    }
+
+}
+
+.contact-icon {
+    height: 32px;
+    filter: invert(85%) sepia(12%) saturate(1019%) hue-rotate(97deg) brightness(81%) contrast(85%);
 }
