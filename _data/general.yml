@@ -19,7 +19,7 @@ items:
         bg: /assets/img/contact.jpg  
   
   home:
-    heading: Reimagining urban living in LoHi
+    heading: Reimagining <br> urban living <br> in LoHi
     subheading: A community where living and working combine with luxury
     paragraph: 
       - LoHi features some of Denver's greatest architecture, a vibrant scene of local restaurants and shops, as well as fantastic views of Denver landmarks such as the Highland Bridge.
