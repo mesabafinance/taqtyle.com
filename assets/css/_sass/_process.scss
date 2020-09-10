@@ -8,3 +8,16 @@
     }
 }
 
+.section-2-card {
+    display: flex;
+    padding: 2rem;
+
+    svg {
+        height: 90px;
+    }
+}
+
+.section3 p {
+    padding: 2rem;
+    border: 1px solid $primary-color;
+}

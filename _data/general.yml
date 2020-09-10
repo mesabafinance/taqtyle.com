@@ -5,10 +5,10 @@ items:
         url: /vision/
         name: our vision
         bg: /assets/img/dean-building.png
-      # -
-      #   url: /process
-      #   name: our process
-      #   bg: /assets/img/team.jpg
+      -
+        url: /process
+        name: our process
+        # bg: /assets/img/team.jpg
       -
         url: /team/
         name: our team
@@ -16,7 +16,9 @@ items:
       -
         url: /contact/
         name: contact
-        bg: /assets/img/contact.jpg  
+        bg: /assets/img/contact.jpg
+  
+      
   
   home:
     heading: Reimagining <br> urban living <br> in LoHi
