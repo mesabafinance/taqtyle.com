@@ -13,9 +13,9 @@
     </div>
 {% endunless %}
 
-<div class="bg-pri d-flex align-items-end footer pt-5" id="footer" style="min-height: 25vh">
-    <div class="container py-5">
-        <div class="row p-5 bg-white text-center justify-content-center">
+<div class="bg-pri d-flex align-items-end footer py-5" id="footer" style="min-height: 25vh">
+    <div class="container py-5 bg-white ">
+        <div class="row p-5 text-center justify-content-center">
             {% if page.contact %}
                 <div class="col-sm-4">
                     <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/pin.svg">
@@ -38,6 +38,7 @@
                 <p>{{site.data.general.items.contact.phone}}</p>
             </div>
         </div>
+        <p class="text-center small">{% include privacy.html %}</p>
     </div>
 </div>
 
