@@ -1,9 +1,13 @@
 ---
 layout: base
-permalink: /team/index.html
-title: Team
 ---
-{% assign data = site.data.general.items.team %}
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items.team %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items.team %}
+{% endcase %}
 
 <div class="section d-flex align-items-center">
     <div class="container">

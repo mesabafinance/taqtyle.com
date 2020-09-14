@@ -2,5 +2,12 @@
 published: true
 ---
 RewriteEngine On
+
 RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://www.taqtyle.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ https://taqtyle.com/en/ [L,R=301]
+
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^$ https://taqtyle.com/es/ [L,R=301]

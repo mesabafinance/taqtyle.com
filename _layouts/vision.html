@@ -1,10 +1,12 @@
 ---
 layout: base
-permalink: /vision/index.html
-title: Vision
 ---
-
-{% assign data = site.data.general.items.vision %}
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items.vision %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items.vision %}
+{% endcase %}
 
 <div class="section d-flex align-items-center">
     <div class="container">
@@ -32,7 +34,6 @@ title: Vision
         </div>
     </div>
 </div>
-
 
 <div class="section">
     <div class="container py-5 mb-5 text-center">

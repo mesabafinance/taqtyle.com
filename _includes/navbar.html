@@ -1,34 +1,40 @@
+{% case page.lang %}
+    {% when "en" %}
+        {% assign nav = site.data.english.items.home.navigation %}
+    {% when "es" %}
+        {% assign nav = site.data.spanish.items.home.navigation %}
+{% endcase %}
+
 <div class="pos-f-t fixed-top">
     <div class="sidebar">
-        <div id="hide-icon" class=" menu-icon mr-sm-5 text-white">
+        <div class=" menu-icon mr-sm-5 text-white" id="hide-icon">
             <p class="hide-icon p-2 pt-md-4 pb-5">
                 CLOSE
             </p>
         </div>
         <ul class="menu">
             <li>
-                <a href="/">home</a>
+                <a href="/{{page.lang}}">home</a>
             </li>
-            {% for i in site.data.general.items.navigation.items %}
+            {% for i in nav.items %}
                 <li>
-                    <a href="{{i.url}}">{{i.name}}</a>
+                    <a href="/{{page.lang}}{{i.url}}">{{i.name}}</a>
                 </li>
             {% endfor %}
         </ul>
     </div>
 
-    
-        <nav class="navbar">
-            <a class="navbar-brand logo" href="/">
-                <img class="ml-sm-5" alt="{{site.title}}" src="/assets/img/taqtyle-logo.png">
-            </a>
-            <div class="menu-icon bg-sec mr-sm-5 text-white p-2 pt-md-4 pb-5">
-                <p>
-                    MENU
-                </p>
-            </div>
-    
-        </nav>
-    
 
+    <nav class="navbar">
+        <a class="navbar-brand logo" href="/">
+            <img class="ml-sm-5" alt="{{site.title}}" src="/assets/img/taqtyle-logo.png">
+        </a>
+        <div class="menu-icon bg-sec mr-sm-5 text-white p-2 pt-md-4 pb-5">
+            <p>
+                MENU
+            </p>
+        </div>
+    </nav>
 </div>
+
+<!-- TODO: Add language picker -->
