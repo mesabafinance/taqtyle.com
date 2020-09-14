@@ -1,10 +1,13 @@
 ---
 layout: base
-permalink: /process/index.html
-title: Process
 ---
 
-{% assign data = site.data.general.items.process %}
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items.process %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items.process %}
+{% endcase %}
 
 <div class="process-page">
 

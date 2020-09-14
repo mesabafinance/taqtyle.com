@@ -1,0 +1,82 @@
+items:
+  home:
+    heading: Reimagining <br> urban living <br> in LoHi
+    subheading: A community where living and working combine with luxury
+    paragraph: 
+      - LoHi features some of Denver's greatest architecture, a vibrant scene of local restaurants and shops, as well as fantastic views of Denver landmarks such as the Highland Bridge.
+      - Taqtyle made it its mission to promote and foster the LoHi community by developing vanguard real estate projects that both fit into and advance the neighborhood.
+    navigation:
+      items:
+        -
+          url: /vision/
+          name: our vision
+          bg: /assets/img/dean-building.png
+        # -
+        #   url: /process
+        #   name: our process
+        #   bg: /assets/img/team.jpg
+        -
+          url: /team/
+          name: our team
+          bg: /assets/img/work-space.jpg
+        -
+          url: /contact/
+          name: contact
+          bg: /assets/img/contact.jpg  
+  team:
+   heading: our team
+   paragraph: The Taqtyle team brings together a group of experienced professionals. Besides our in-house experts, we rely on a vast network of industry leaders from construction, architecture, and finance. Together, we are determined to build a better LoHi.
+   items:
+    -
+      name: Alyssa Greeley
+      role: Director of Acquisitions and Development
+      mail: alyssa@taqtyle.com
+      text: Alyssa directs all operational aspects of Taqtyle’s real estate activities and projects. She holds a Colorado Real Estate License and is a designated Realtor with multiple years of experience in the Colorado real estate market. Alyssa ensures effective and profitable developments by building positive relationships and working closely with strategic partners.
+      img: /assets/img/team/alyssa-greeley.jpg
+      linkedin: https://www.linkedin.com/in/alyssagreeley/
+    -
+      name: Dean Dovolis
+      role: Architect 
+      text: Dean founded DJR Architecture in 1985 in the twin cities, Minnesota with an emphasis on affordable housing and community development. Dean continues to evolve the firm into a broad provider of international architectural services while still playing an active role in the local development of the twin cities.
+      website-name: djrarch.com
+      website: https://djrarch.com/
+      mail: mark@taqtyle.com
+      linkedin: https://www.linkedin.com/in/markerjavec/
+      img: /assets/img/team/Dean.jpg
+    -
+      name: Mark Erjavec
+      role: Finance Partner
+      text: Mark is a serial entrepreneur, investor, and fund manager with over 20 years of experience in finance and real estate. For Taqtyle, Mark takes care of strategic planning, risk management, operational oversight and investment decisions.
+      website-name: mesabafinance.com
+      website: https://mesabafinance.com 
+      mail: mark@taqtyle.com
+      linkedin: https://www.linkedin.com/in/markerjavec/
+      img: /assets/img/team/mark-headshot.jpg
+    -
+      name: Leslie Myles
+      role: Construction Partner
+      text: 
+      website-name: emergeconstruction.com
+      website: https://www.emergeconstruction.com/
+      mail: mark@taqtyle.com
+      linkedin: https://www.linkedin.com/in/markerjavec/
+      img: /assets/img/team/Leslie-myles-contracter.jpg
+   
+  vision:
+    heading: our vision
+    paragraph: We envision a neighborhood where new residential real estate integrates with the existing architecture yet provides the future of modern, urban living. We want to be a vital part of the community we build in.
+    paragraph2: Our concepts include developing vertical, micro-apartment communities designed for a more sustainable lifestyle. With an emphasis on lifestyle over space, we aspire to provide a more efficient way to live in LoHi.
+    subscribe:
+      heading: Keep in touch
+      paragraph: Sign up for our mailing list and get the latest news and developments directly to your inbox.
+  process:
+    heading: our development process
+    paragraph: 
+
+  contact:
+    heading: contact
+    paragraph: Our team is excited to hear from you. Reach out to us any time via phone or simply send us a message below. We will get back to you shortly.
+    street: "1041 Grand Ave #300"
+    city: St. Paul, Minnesota, 55105
+    phone: (720) 780-5665
+    mail: hello@taqtyle.com

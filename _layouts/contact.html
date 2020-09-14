@@ -1,10 +1,14 @@
 ---
 layout: base
-permalink: /contact/index.html
-contact: true
-title: Contact
 ---
-{% assign data = site.data.general.items.contact %}
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.general.items.contact %}
+    {% when "es" %}
+        {% assign data = site.data.general.items.contact %}
+{% endcase %}
+
 
 <div class="section d-flex align-items-center">
     <div class="container">
