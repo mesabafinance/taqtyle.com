@@ -1,5 +1,26 @@
-<a href="/en">English</a>
+---
+layout: base
+home: true
+---
 
-<a href="/es">Spanish</a>
+<div class="container text-center">
+    <img class="img-fluid mt-5" src="/assets/img/taqtyle-logo.png">
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <h1 class="my-4">{{site.data.english.items.home.heading|strip_html}}</h1>
+            <h2 class="">{{site.data.english.items.home.subheading}}</h2>
+            <p class="lead my-4">Choose your language:</p>
+        </div>
+    </div>
+    <div class="row align-items-center justify-content-center" style="min-height: 30vh">
+        <div class="col-8 col-sm-2 lang-box">
+            <a href="/en">English</a>
+        </div>
+        <div class="col-8 col-sm-2 lang-box">
+            <a href="/es">Spanish</a>
+        </div>
+    </div>
+</div>
+
 
 <!-- TODO: Improve base page-->

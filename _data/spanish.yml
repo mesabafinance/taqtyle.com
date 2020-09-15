@@ -1,7 +1,7 @@
 items:
   home:
-    heading: Reinventando <br>la vida urbana <br>en LoHi
-    subheading: Una comunidad donde vivir y trabajar se combina con el lujo
+    heading: Reimaginando <br>la vida urbana <br>en LoHi
+    subheading: Una comunidad donde vivir y trabajar se combinan con el lujo
     paragraph: 
       - LoHi presenta algunas de las mejores arquitecturas de Denver, una vibrante escena de restaurantes y tiendas locales, así como fantásticas vistas de los puntos de referencia de Denver, como el Puente de Highland.
       - Taqtyle se propuso la misión de promover y fomentar la comunidad LoHi desarrollando proyectos inmobiliarios de vanguardia que encajen en el vecindario y lo hagan progresar.
@@ -47,7 +47,7 @@ items:
       img: /assets/img/team/Dean.jpg
     -
       name: Mark Erjavec
-      role: Socio Financiero
+      role: Socio de Finanzas
       text: Mark es un empresario en serie, inversor y gestor de fondos con más de 20 años de experiencia en finanzas y bienes raíces. Para Taqtyle, Mark se encarga de la planificación estratégica, la gestión de riesgos, la supervisión operativa y las decisiones de inversión.
       website-name: mesabafinance.com
       website: https://mesabafinance.com 
