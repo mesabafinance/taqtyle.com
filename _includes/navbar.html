@@ -16,9 +16,9 @@
             <p class="lang-picker">
                 {% case page.lang %}
                     {% when "en" %}
-                        language: english<a class="ml-2" href="{{page.url|replace: "/en/","/es/"}}">spanish</a>
+                        language: english<a class="ml-2" href="{{page.url|replace: "/en/","/es/"|replace: "index.html", ""}}">spanish</a>
                     {% when "es" %}
-                        idioma: español<a class="ml-2" href="{{page.url|replace: "/es/","/en/"}}">inglés</a>
+                        idioma: español<a class="ml-2" href="{{page.url|replace: "/es/","/en/"|replace: "index.html", ""}}">inglés</a>
                 {% endcase %}
             </p>
             <ul>
