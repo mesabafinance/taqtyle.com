@@ -79,7 +79,11 @@
 
 .sidebar .menu {
   margin: 0;
-  padding: 55px 0;
+  padding: 60px 0;
+}
+
+.sidebar .menu ul {
+  padding-inline-start: unset;
 }
 
 .sidebar .menu li {
@@ -98,10 +102,30 @@
 
   @media (min-width: 762px) {
     font-size: 35px;
-    padding: 26px 19.95323461%;
+    padding: 18px 19.95323461%;
   }
 
   &:hover {
     color: darken(white, 30%);
+  }
+}
+
+.lang-picker {
+  display: block;
+  color: white;
+  letter-spacing: 0.05rem;
+  font-size: 14px;
+  transition: 0.4s cubic-bezier(0.33, 0.69, 1, 1);
+
+  a {
+    text-decoration: none;
+    color: lightslategrey;
+    &:hover {
+      color: white;
+    }
+  }
+  @media (min-width: 762px) {
+    font-size: 20px;
+    padding: 26px 19.95323461%;
   }
 }

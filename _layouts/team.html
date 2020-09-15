@@ -48,22 +48,4 @@ layout: base
             </div>
         {% endfor %}
     </div>
-
-    <!-- <div class="container py-5">
-        <h2 class="text-center mb-4">Partners</h2>
-        {% for i in site.data.general.items.partners.items %}
-            {% assign test = forloop.index|modulo: 2 %}
-
-            <div class="row pb-5 mb-5">
-                <div class="col-md-7 order-xs-last bg-white p-5">
-                    <div class="m-5">
-                        <h4 class="mb-0">{{i.name}}</h4>
-                        <p class="text-dark font-weight-bold">{{i.role}}</p>
-                        <p class="mt-4">{{i.text}}</p>
-                    </div>
-                </div>
-                <div class="col-md-5 team-photo{% if test == 0 %} order-sm-first{% endif %}" style="background-image: url({{i.img}});"></div>
-            </div>
-        {% endfor %}
-    </div> -->
 </div>
