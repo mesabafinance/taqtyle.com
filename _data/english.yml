@@ -6,6 +6,9 @@ items:
       - LoHi features some of Denver's greatest architecture, a vibrant scene of local restaurants and shops, as well as fantastic views of Denver landmarks such as the Highland Bridge.
       - Taqtyle made it its mission to promote and foster the LoHi community by developing vanguard real estate projects that both fit into and advance the neighborhood.
     navigation:
+      home: Home
+      close: Close
+      menu: Menu
       items:
         -
           url: /vision/

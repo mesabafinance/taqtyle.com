@@ -1,9 +1,16 @@
+{% case page.lang %}
+    {% when "en" %}
+        {% assign cdata = site.data.english.items.contact %}
+    {% when "es" %}
+        {% assign cdata = site.data.spanish.items.contact %}
+{% endcase %}
+
 {% unless page.contact %}
     <div class="bg-sec" id="contact-footer">
         <div class="container py-5">
-            <a href="/contact/">
+            <a href="/{{page.lang}}/contact/">
                 <div class="ml-auto text-center">
-                    <h3 class="text-white">contact
+                    <h3 class="text-white">{{cdata.heading}}
                         <span class="arr">→</span>
                     </h3>
 
@@ -20,9 +27,9 @@
                 <div class="col-sm-4">
                     <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/pin.svg">
                     <p>
-                        {{site.data.general.items.contact.street}}
+                        {{cdata.street}}
                         <br>
-                        {{site.data.general.items.contact.city}}
+                        {{cdata.city}}
                     </p>
 
                 </div>
@@ -30,12 +37,12 @@
             <div class="col-sm-4">
                 <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/mail.svg">
                 <p>
-                    <a href="mailto:{{site.data.general.items.contact.mail}}">{{site.data.general.items.contact.mail}}</a>
+                    <a href="mailto:{{cdata.mail}}">{{cdata.mail}}</a>
                 </p>
             </div>
             <div class="col-sm-4">
                 <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/phone.svg">
-                <p>{{site.data.general.items.contact.phone}}</p>
+                <p>{{cdata.phone}}</p>
             </div>
         </div>
         <p class="text-center small">{% include privacy.html %}</p>

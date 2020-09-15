@@ -7,21 +7,31 @@
 
 <div class="pos-f-t fixed-top">
     <div class="sidebar">
-        <div class=" menu-icon mr-sm-5 text-white" id="hide-icon">
-            <p class="hide-icon p-2 pt-md-4 pb-5">
-                CLOSE
+        <div class="menu-icon mr-sm-5 text-white" id="hide-icon">
+            <p class="hide-icon p-2 pt-md-4 pb-5 text-uppercase">
+                {{nav.close}}
             </p>
         </div>
-        <ul class="menu">
-            <li>
-                <a href="/{{page.lang}}">home</a>
-            </li>
-            {% for i in nav.items %}
+        <div class="menu">
+            <p class="lang-picker">
+                {% case page.lang %}
+                    {% when "en" %}
+                        language: english<a class="ml-2" href="{{page.url|replace: "/en/","/es/"}}">spanish</a>
+                    {% when "es" %}
+                        idioma: español<a class="ml-2" href="{{page.url|replace: "/es/","/en/"}}">inglés</a>
+                {% endcase %}
+            </p>
+            <ul>
                 <li>
-                    <a href="/{{page.lang}}{{i.url}}">{{i.name}}</a>
+                    <a class="text-lowercase" href="/{{page.lang}}">{{nav.home}}</a>
                 </li>
-            {% endfor %}
-        </ul>
+                {% for i in nav.items %}
+                    <li>
+                        <a href="/{{page.lang}}{{i.url}}">{{i.name}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 
 
@@ -29,12 +39,11 @@
         <a class="navbar-brand logo" href="/">
             <img class="ml-sm-5" alt="{{site.title}}" src="/assets/img/taqtyle-logo.png">
         </a>
-        <div class="menu-icon bg-sec mr-sm-5 text-white p-2 pt-md-4 pb-5">
+        <div class="menu-icon bg-sec mr-sm-5 text-white p-2 pt-md-4 pb-3 text-uppercase">
             <p>
-                MENU
+                {{nav.menu}}
             </p>
+            <p class="mt-2 text-uppercase"><img alt="Location" class="lang-icon mr-2" src="/assets/img/icons/global.svg">{{page.lang}}</p>
         </div>
     </nav>
 </div>
-
-<!-- TODO: Add language picker -->
