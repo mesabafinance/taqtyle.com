@@ -6,11 +6,66 @@
     @media (min-width: 762px) {
         min-height: 50vh;
     }
+
+    
+}
+
+.process-page {
+    .section {
+        text-align: center;
+        h4 {
+            color: #BDBFC1;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: $primary-color;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+
+.section-1-card {
+    background: #F1F1F2;
+    // :nth-child(odd) {
+    //     background: red;
+    // }
+      
+    svg {
+        height: 100px;
+    }
+
+}
+
+.section-1-card:nth-child(odd) {
+    background: $primary-color;
+    width: 250px;
 }
 
 .section-2-card {
     display: flex;
     padding: 2rem;
+
+    span {
+        width: 80%;
+        border-bottom: 2px solid grey;
+    }
+   
+
+    p {
+        padding-left: 1rem;
+        align-self: center;
+        text-align: left;
+
+        @media (min-width: 762px) {
+            padding-left: 2rem;
+          
+        }
+    }
 
     svg {
         height: 90px;
@@ -18,6 +73,31 @@
 }
 
 .section3 p {
-    padding: 2rem;
+    width: 270px;
+    padding: 1rem;
     border: 1px solid $primary-color;
+}
+
+.section4 {
+    .card-img-top {
+        height: 95px;
+        margin: 2rem 0;
+    }
+    .card-body {
+        background: $secondary-color;
+        color: white;
+        
+    }
+}
+
+.section5 {
+
+    p {
+        background: $primary-color;
+        color: white;
+        padding: 2rem;
+    }
+    p:first-of-type {
+        background: $secondary-color;
+    }
 }
