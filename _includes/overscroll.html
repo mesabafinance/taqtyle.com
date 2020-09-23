@@ -1,0 +1,32 @@
+<script type="text/javascript">
+
+    window.onscroll = function (ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            $("#sellModal").modal();
+        }
+    };
+</script>
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="sellModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content sell-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thinking of selling your property?</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Considering selling your property?</h4>
+                <p>
+                    <a href=""></a>
+                </p>
+                Click here
+                <a class="btn btn-primary">Click</a>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
