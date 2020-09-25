@@ -79,6 +79,7 @@
         padding-left: 1rem;
         align-self: center;
         text-align: left;
+        margin-bottom: 0;
 
         @media (min-width: 762px) {
             padding-left: 2rem;
@@ -92,9 +93,9 @@
 }
 
 .section3 p {
-    width: 270px;
-    padding: 1rem;
-    border: 1px solid $primary-color;
+    // width: 270px;
+    // padding: 1rem;
+    // border: 1px solid $primary-color;
 }
 
 .section4 {
@@ -118,6 +119,12 @@
     }
     p:first-of-type {
         background: $secondary-color;
+    }
+
+    h5 {
+        font-size: 30px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
     }
 
     .section-5-card {
@@ -160,7 +167,11 @@
         width: 200px;
         background: $secondary-color;
         color: white;
-        margin: 2rem;
+        margin: 1rem;
+
+        @media (min-width: 762px) {
+            margin: 2rem;
+        }
 
         p{
             margin-bottom: 0;
@@ -175,11 +186,13 @@
     color: white;
     width: 100%;
     padding: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
 
     p {
         text-align: center;
         width: 100%;
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 0;
     }
 }
