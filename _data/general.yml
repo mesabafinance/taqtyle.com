@@ -8,11 +8,11 @@ items:
       -
         url: /process
         name: our process
-        # bg: /assets/img/team.jpg
+        bg: /assets/img/process-heroimg.jpg
       -
         url: /team/
         name: our team
-        bg: /assets/img/work-space.jpg
+        bg: /assets/img/team-heroimg.jpg
       -
         url: /contact/
         name: contact
