@@ -39,7 +39,7 @@ title: Process
             <div class="d-flex flex-column">
                 <div class="align-self-center mb-4">
                     <h4>{{data.step_1.heading}}</h4>
-                    <h3>{{data.step_1.subheading}}</h3>
+                    <h2>{{data.step_1.subheading}}</h2>
                 </div>
                 <div class="row">
                     {% for i in data.step_1.items %}
@@ -69,7 +69,7 @@ title: Process
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
                     <h4>{{data.step_2.heading}}</h4>
-                    <h3>{{data.step_2.subheading}}</h3>
+                    <h2>{{data.step_2.subheading}}</h2>
                 </div>
                 <div>
                     <h5>{{data.step_2.description}}</h5>
@@ -119,10 +119,19 @@ title: Process
             <div class="">
                 <div class="pt-5 mt-5 mb-4">
                     <h4>{{data.step_3.heading}}</h4>
-                    <h3>{{data.step_3.subheading}}</h3>
+                    <h2>{{data.step_3.subheading}}</h2>
                 </div>
             </div>
-            <div class="card-deck">
+            <div class="row d-flex justify-content-center">
+                {% for i in data.step_3.items %}
+                    <div class="col-md-4">
+                        <div class="step3-card mb-4 d-flex align-items-center justify-content-center">
+                            <p class="">{{i.label}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- <div class="card-deck">
                 {% for i in data.step_3.items %}
                     <div class="card col">
                         <div class="card-body">
@@ -130,7 +139,7 @@ title: Process
                         </div>
                     </div>
                 {% endfor %}
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -140,7 +149,7 @@ title: Process
             <div class="row">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
                     <h4>{{data.step_4.heading}}</h4>
-                    <h3>{{data.step_4.subheading}}</h3>
+                    <h2>{{data.step_4.subheading}}</h2>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 card-deck">
@@ -162,7 +171,7 @@ title: Process
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
                     <h4>{{data.step_5.heading}}</h4>
-                    <h3>{{data.step_5.subheading}}</h3>
+                    <h2>{{data.step_5.subheading}}</h2>
                 </div>
                 <div class="row">
                     {% for i in data.step_5.boxes %}
@@ -209,7 +218,7 @@ title: Process
             <div class="row d-flex align-items-center justify-content-center flex-column">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
                     <h4>{{data.step_6.heading}}</h4>
-                    <h3>{{data.step_6.subheading}}</h3>
+                    <h2>{{data.step_6.subheading}}</h2>
                 </div>
                 <div class="row d-flex justify-content-center circle-section">
                     {% for i in data.step_6.items %}
