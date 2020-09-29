@@ -5,7 +5,9 @@
     min-height: 30vh;
     @media (min-width: 762px) {
         min-height: 50vh;
-    }   
+    } 
+    
+   
 }
 
 .process-page {
@@ -92,11 +94,29 @@
     }
 }
 
-.section3 p {
-    // width: 270px;
-    // padding: 1rem;
-    // border: 1px solid $primary-color;
-}
+.section3{
+
+    .card {
+        margin-bottom: 1rem;
+   
+        @media (min-width: 762px) {
+            margin: 1rem;
+            
+          
+        }
+        
+    }
+
+    p {
+        // width: 270px;
+        // padding: 1rem;
+        // border: 1px solid $primary-color;
+    }
+
+} 
+
+
+
 
 .section4 {
     .card-img-top {
@@ -115,7 +135,12 @@
     p {
         background: $primary-color;
         color: white;
-        padding: 2rem;
+        padding: 2rem 0;
+        
+        @media (min-width: 762px) {
+            padding: 2rem;
+          
+        }
     }
     p:first-of-type {
         background: $secondary-color;
