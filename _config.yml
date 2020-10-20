@@ -10,3 +10,17 @@ plugins:
   - jekyll-feed
 sass:
   sass_dir: assets/css/_sass
+
+  # data for privacy policy
+address:
+  name: Taqtyle
+  street: "1041 Grand Ave #300"
+  city: St. Paul
+  state: Minnesota
+  zip: 55105
+  country: United States
+  phone: +1 (720) 780-5665
+
+privacy:
+  hubspot: true
+  formspark: true
