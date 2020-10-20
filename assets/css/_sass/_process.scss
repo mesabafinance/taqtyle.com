@@ -1,5 +1,5 @@
 #process {
-    background-image: url(/assets/img/process-heroimg.jpg);
+    background-image: url(/assets/img/process-hero-img.jpg);
     background-position: center;
     background-size: cover;
     min-height: 30vh;
@@ -28,11 +28,7 @@
 
 }
 
-
-.section-1-card {
-    background: #F1F1F2;
-    padding-top: 1.5rem;
-
+.section1 {
     .svg-container {
         padding: 1rem;
     }
@@ -40,18 +36,39 @@
     svg {
         height: 100px;
     }
+    
+    p {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+.section-2-card {
+    // background: $primary-color;
+    padding-top: 1.5rem;
+
+    .svg-container {
+        padding: 1rem;
+    }
+    
+    svg {
+        height: 90px;
+    }
 
     p {
         padding-top: 1rem;
+        padding-top: 1rem;
+        font-size: 1.2rem;
     }
 
 }
 
-.section-1-card:nth-child(odd) {
-    background: $primary-color;
-    width: 250px;
-    color: white;
-}
+// .section-2-card:nth-child(odd) {
+//     background: $primary-color;
+//     width: 250px;
+//     color: white;
+// }
 
 .grey-bg {
     background: #F1F1F2;
@@ -68,7 +85,7 @@
     }
 }
 
-.section-2-card {
+.section-3-card {
     display: flex;
     padding: 2rem;
 
@@ -94,9 +111,9 @@
     }
 }
 
-.section3{
+.section4{
 
-    .step3-card {
+    .step4-card {
         height: 130px;
         border:solid 2px lightgrey;
         padding: 0 1rem;
@@ -111,7 +128,7 @@
 
 
 
-.section4 {
+.section5 {
     .card-img-top {
         height: 95px;
         margin: 2rem 0;
@@ -123,7 +140,7 @@
     }
 }
 
-.section5 {
+.section6 {
 
     p {
         background: $primary-color;
@@ -145,7 +162,7 @@
         margin-bottom: 2rem;
     }
 
-    .section-5-card {
+    .section-6-card {
         padding-top: 1.5rem;
         display: flex;
         align-items: center;
@@ -206,6 +223,10 @@
     padding: 2rem;
     margin-bottom: 5rem;
     margin-top: 1rem;
+
+    @media (min-width: 762px) {
+        margin-bottom: 10rem;
+    }
 
     p {
         text-align: center;
