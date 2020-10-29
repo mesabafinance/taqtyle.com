@@ -34,16 +34,16 @@ title: Process
     </div>
 
     <!-- step 1 -->
-    <div class="section">
+    <div class="section section1 pb-5">
         <div class="container">
             <div class="d-flex flex-column">
-                <div class="align-self-center mb-4">
+                <div class="align-self-center pt-5 mt-5 mb-4">
                     <h4>{{data.step_1.heading}}</h4>
-                    <h3>{{data.step_1.subheading}}</h3>
+                    <h2>{{data.step_1.subheading}}</h2>
                 </div>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     {% for i in data.step_1.items %}
-                        <div class="col-12 col-lg section-1-card">
+                        <div class="col-12 col-lg-4 section-1-card">
                             <div class="svg-container">
                                 <svg viewbox="{{i.svg.viewbox}}" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
@@ -63,20 +63,49 @@ title: Process
     </div>
 
     <!-- step 2 -->
+    <div class="section pb-5">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <div class="align-self-center pt-5 mt-5 mb-4">
+                    <h4>{{data.step_2.heading}}</h4>
+                    <h2>{{data.step_2.subheading}}</h2>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    {% for i in data.step_2.items %}
+                        <div class="col-12 col-lg-4 section-2-card">
+                            <div class="svg-container">
+                                <svg viewbox="{{i.svg.viewbox}}" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        {{i.style}}
+                                    </defs>
+                                    <g data-name="Layer 2" id="Layer_2">
+                                        {{i.svg.layer}}
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>{{i.label}}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="section section2">
+    <!-- step 3 -->
+
+    <div class="section section3 pb-5">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
-                    <h4>{{data.step_2.heading}}</h4>
-                    <h3>{{data.step_2.subheading}}</h3>
+                    <h4>{{data.step_3.heading}}</h4>
+                    <h2>{{data.step_3.subheading}}</h2>
                 </div>
                 <div>
-                    <h5>{{data.step_2.description}}</h5>
-                    <p>{{data.step_2.description2}}</p>
+                    <h5>{{data.step_3.description}}</h5>
+                    <p>{{data.step_3.description2}}</p>
                 </div>
                 <div class="row grey-bg">
-                    {% for i in data.step_2.boxes %}
+                    {% for i in data.step_3.boxes %}
                         <p class="col-md-6">{{i.main}}
                             {% if i.small %}
                                 <br>
@@ -88,8 +117,8 @@ title: Process
                 </div>
 
                 <div class="card-containter d-flex flex-wrap justify-content-center">
-                    {% for i in data.step_2.items %}
-                        <div class="col-sm-6 section-2-card">
+                    {% for i in data.step_3.items %}
+                        <div class="col-sm-6 section-3-card">
                             <div class="col">
                                 <svg viewbox="{{i.svg.viewbox}}" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
@@ -113,16 +142,25 @@ title: Process
         </div>
     </div>
 
-    <!-- step 3 -->
-    <div class="section section3">
+    <!-- step 4 -->
+    <div class="section section4 pb-5">
         <div class="container">
             <div class="">
                 <div class="pt-5 mt-5 mb-4">
-                    <h4>{{data.step_3.heading}}</h4>
-                    <h3>{{data.step_3.subheading}}</h3>
+                    <h4>{{data.step_4.heading}}</h4>
+                    <h2>{{data.step_4.subheading}}</h2>
                 </div>
             </div>
-            <div class="card-deck">
+            <div class="row d-flex justify-content-center">
+                {% for i in data.step_4.items %}
+                    <div class="col-md-4">
+                        <div class="step4-card mb-4 d-flex align-items-center justify-content-center">
+                            <p class="">{{i.label}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- <div class="card-deck">
                 {% for i in data.step_3.items %}
                     <div class="card col">
                         <div class="card-body">
@@ -130,24 +168,24 @@ title: Process
                         </div>
                     </div>
                 {% endfor %}
-            </div>
+            </div> -->
         </div>
     </div>
 
-    <!-- step 4 -->
-    <div class="section section4">
+    <!-- step 5 -->
+    <div class="section section5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
-                    <h4>{{data.step_4.heading}}</h4>
-                    <h3>{{data.step_4.subheading}}</h3>
+                    <h4>{{data.step_5.heading}}</h4>
+                    <h2>{{data.step_5.subheading}}</h2>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 card-deck">
-                {% for i in data.step_4.items %}
+                {% for i in data.step_5.items %}
                     <div class="card">
                         <img alt="Card image cap" class="card-img-top" src="{{i.svg}}">
-                        <div class="card-body">
+                        <div class="card-body d-flex align-items-center justify-content-center">
                             <p class="card-text">{{i.label}}</p>
                         </div>
                     </div>
@@ -156,26 +194,26 @@ title: Process
         </div>
     </div>
 
-    <!-- step 5 -->
-    <div class="section section5">
+    <!-- step 6 -->
+    <div class="section section6 pb-5">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
-                    <h4>{{data.step_5.heading}}</h4>
-                    <h3>{{data.step_5.subheading}}</h3>
+                    <h4>{{data.step_6.heading}}</h4>
+                    <h2>{{data.step_6.subheading}}</h2>
                 </div>
                 <div class="row">
-                    {% for i in data.step_5.boxes %}
+                    {% for i in data.step_6.boxes %}
                         <p class="col-md-6">{{i}}</p>
                     {% endfor %}
                 </div>
             </div>
             <div class>
-                <h5>{{data.step_5.extraheading}}</h5>
+                <h5>{{data.step_6.extraheading}}</h5>
             </div>
             <div class="row">
-                {% for i in data.step_5.items %}
-                    <div class="col section-5-card">
+                {% for i in data.step_6.items %}
+                    <div class="col section-6-card">
                         <div class="half-circle"></div>
                         <div class="svg-container">
                             <svg viewbox="{{i.svg.viewbox}}" xmlns="http://www.w3.org/2000/svg">
@@ -203,23 +241,23 @@ title: Process
         </div>
     </div>
 
-    <!-- step 6 -->
-    <div class="section section6">
+    <!-- step 7 -->
+    <div class="section section7 pb-5">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center flex-column">
                 <div class="col-md-12 pt-5 mt-5 mb-4">
-                    <h4>{{data.step_6.heading}}</h4>
-                    <h3>{{data.step_6.subheading}}</h3>
+                    <h4>{{data.step_7.heading}}</h4>
+                    <h2>{{data.step_7.subheading}}</h2>
                 </div>
                 <div class="row d-flex justify-content-center circle-section">
-                    {% for i in data.step_6.items %}
+                    {% for i in data.step_7.items %}
                         <div class="rounded-circle">
                             <p>{{i}}</p>
                         </div>
                     {% endfor %}
                 </div>
                 <div class="row green-bg-bottom">
-                    <p>{{data.step_6.box}}</p>
+                    <p>{{data.step_7.box}}</p>
                 </div>
             </div>
         </div>
