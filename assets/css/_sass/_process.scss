@@ -1,10 +1,223 @@
 #process {
-    background-image: url(/assets/img/dean-building.png);
+    background-image: url(/assets/img/process-heroimg.jpg);
     background-position: center;
     background-size: cover;
     min-height: 30vh;
     @media (min-width: 762px) {
         min-height: 50vh;
+    } 
+    
+   
+}
+
+.process-page {
+    .section {
+        text-align: center;
+        h4 {
+            color: #BDBFC1;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: $primary-color;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+
+.section-1-card {
+    background: #F1F1F2;
+    padding-top: 1.5rem;
+
+    .svg-container {
+        padding: 1rem;
+    }
+    
+    svg {
+        height: 100px;
+    }
+
+    p {
+        padding-top: 1rem;
+    }
+
+}
+
+.section-1-card:nth-child(odd) {
+    background: $primary-color;
+    width: 250px;
+    color: white;
+}
+
+.grey-bg {
+    background: #F1F1F2;
+
+    p {
+        padding: 2rem;
+        margin-bottom: 0;
+        align-self: center;
+
+        span {
+            color: $primary-color;
+            font-size: 12px;
+        }
     }
 }
 
+.section-2-card {
+    display: flex;
+    padding: 2rem;
+
+    span {
+        width: 80%;
+        border-bottom: 2px solid grey;
+    }
+   
+    p {
+        padding-left: 1rem;
+        align-self: center;
+        text-align: left;
+        margin-bottom: 0;
+
+        @media (min-width: 762px) {
+            padding-left: 2rem;
+          
+        }
+    }
+
+    svg {
+        height: 90px;
+    }
+}
+
+.section3{
+
+    .card {
+        margin-bottom: 1rem;
+   
+        @media (min-width: 762px) {
+            margin: 1rem;
+            
+          
+        }
+        
+    }
+
+    p {
+        // width: 270px;
+        // padding: 1rem;
+        // border: 1px solid $primary-color;
+    }
+
+} 
+
+
+
+
+.section4 {
+    .card-img-top {
+        height: 95px;
+        margin: 2rem 0;
+    }
+    .card-body {
+        background: $secondary-color;
+        color: white;
+        
+    }
+}
+
+.section5 {
+
+    p {
+        background: $primary-color;
+        color: white;
+        padding: 2rem 0;
+        
+        @media (min-width: 762px) {
+            padding: 2rem;
+          
+        }
+    }
+    p:first-of-type {
+        background: $secondary-color;
+    }
+
+    h5 {
+        font-size: 30px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-5-card {
+        padding-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .half-circle {
+            width: 200px;
+            height: 100px;
+            border-top-left-radius: 110px;
+            border-top-right-radius: 110px;
+            border: 6px solid $primary-color;
+            border-bottom: 0;
+        }
+    
+        .svg-container {
+            padding: 1rem;
+            margin-top: -56px;
+        }
+        
+        svg {
+            height: 90px;
+        }
+    
+        p {
+            padding-top: 1rem;
+            background: none;
+            color: black;
+        }
+    
+    }
+}
+
+.circle-section {
+    div {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background: $secondary-color;
+        color: white;
+        margin: 1rem;
+
+        @media (min-width: 762px) {
+            margin: 2rem;
+        }
+
+        p{
+            margin-bottom: 0;
+            align-self: center;
+            padding: 1rem;
+        }
+    }
+}
+
+.green-bg-bottom {
+    background: $primary-color;
+    color: white;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+
+    p {
+        text-align: center;
+        width: 100%;
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+}

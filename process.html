@@ -1,32 +1,228 @@
 ---
 layout: base
 permalink: /process/index.html
-published: false
+title: Process
 ---
 
 {% assign data = site.data.general.items.process %}
 
-<div class="section d-flex align-items-center">
-    <div class="container">
-        <div class="row page-header">
-            <div class="col-md-6 offset-md-1">
-                <h1>{{data.heading}}</h1>
-            </div>
-            <div class="col-md-4 offset-md-6 intro-paragraph">
-                <p class="pl-sm-4">{{data.paragraph}}</p>
+<div class="process-page">
+
+    <div class="section d-flex align-items-center">
+        <div class="container">
+            <div class="row page-header">
+                <div class="col-md-6 offset-md-1">
+                    <h1>{{data.heading}}</h1>
+                </div>
+                <div class="col-md-4 offset-md-6 intro-paragraph">
+                    <p class="pl-sm-4 text-left">{{data.paragraph}}</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="section">
-    <div class="container-fluid" id="process"></div>
-</div>
+    <div class="section">
+        <div class="container-fluid" id="process"></div>
+    </div>
 
-<div class="section">
-    <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6 pt-5 mt-5"></div>
+    <div class="section">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-6 pt-5 mt-5"></div>
+            </div>
         </div>
     </div>
-</div> 
+
+    <!-- step 1 -->
+    <div class="section">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <div class="align-self-center mb-4">
+                    <h4>{{data.step_1.heading}}</h4>
+                    <h3>{{data.step_1.subheading}}</h3>
+                </div>
+                <div class="row">
+                    {% for i in data.step_1.items %}
+                        <div class="col-12 col-lg section-1-card">
+                            <div class="svg-container">
+                                <svg viewbox="{{i.svg.viewbox}}" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        {{i.style}}
+                                    </defs>
+                                    <g data-name="Layer 2" id="Layer_2">
+                                        {{i.svg.layer}}
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>{{i.label}}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- step 2 -->
+
+    <div class="section section2">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-12 pt-5 mt-5 mb-4">
+                    <h4>{{data.step_2.heading}}</h4>
+                    <h3>{{data.step_2.subheading}}</h3>
+                </div>
+                <div>
+                    <h5>{{data.step_2.description}}</h5>
+                    <p>{{data.step_2.description2}}</p>
+                </div>
+                <div class="row grey-bg">
+                    {% for i in data.step_2.boxes %}
+                        <p class="col-md-6">{{i.main}}
+                            {% if i.small %}
+                                <br>
+                                <span>{{i.small}}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+
+                </div>
+
+                <div class="card-containter d-flex flex-wrap justify-content-center">
+                    {% for i in data.step_2.items %}
+                        <div class="col-sm-6 section-2-card">
+                            <div class="col">
+                                <svg viewbox="{{i.svg.viewbox}}" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                        .cls-1 {
+                                            fill: #73be99;
+                                            fill-rule: evenodd;
+                                        }
+                                    </style>
+                                    </defs>
+                                    <g data-name="Layer 2" id="Layer_2">
+                                        {{i.svg.layer}}
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class="col-8">{{i.label}}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- step 3 -->
+    <div class="section section3">
+        <div class="container">
+            <div class="">
+                <div class="pt-5 mt-5 mb-4">
+                    <h4>{{data.step_3.heading}}</h4>
+                    <h3>{{data.step_3.subheading}}</h3>
+                </div>
+            </div>
+            <div class="card-deck">
+                {% for i in data.step_3.items %}
+                    <div class="card col">
+                        <div class="card-body">
+                            <p class="card-text">{{i.label}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- step 4 -->
+    <div class="section section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pt-5 mt-5 mb-4">
+                    <h4>{{data.step_4.heading}}</h4>
+                    <h3>{{data.step_4.subheading}}</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 card-deck">
+                {% for i in data.step_4.items %}
+                    <div class="card">
+                        <img alt="Card image cap" class="card-img-top" src="{{i.svg}}">
+                        <div class="card-body">
+                            <p class="card-text">{{i.label}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- step 5 -->
+    <div class="section section5">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-12 pt-5 mt-5 mb-4">
+                    <h4>{{data.step_5.heading}}</h4>
+                    <h3>{{data.step_5.subheading}}</h3>
+                </div>
+                <div class="row">
+                    {% for i in data.step_5.boxes %}
+                        <p class="col-md-6">{{i}}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class>
+                <h5>{{data.step_5.extraheading}}</h5>
+            </div>
+            <div class="row">
+                {% for i in data.step_5.items %}
+                    <div class="col section-5-card">
+                        <div class="half-circle"></div>
+                        <div class="svg-container">
+                            <svg viewbox="{{i.svg.viewbox}}" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <style>
+                                    .cls-red,
+                                    .cls-2 {
+                                        fill: #65072a;
+                                    }
+
+                                    .cls-red {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                                </defs>
+                                <g data-name="Layer 2" id="Layer_2">
+                                    {{i.svg.layer}}
+                                </g>
+                            </svg>
+                        </div>
+                        <p>{{i.label}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- step 6 -->
+    <div class="section section6">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center flex-column">
+                <div class="col-md-12 pt-5 mt-5 mb-4">
+                    <h4>{{data.step_6.heading}}</h4>
+                    <h3>{{data.step_6.subheading}}</h3>
+                </div>
+                <div class="row d-flex justify-content-center circle-section">
+                    {% for i in data.step_6.items %}
+                        <div class="rounded-circle">
+                            <p>{{i}}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="row green-bg-bottom">
+                    <p>{{data.step_6.box}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
