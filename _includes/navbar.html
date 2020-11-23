@@ -16,9 +16,9 @@
             <p class="lang-picker">
                 {% case page.lang %}
                     {% when "en" %}
-                        language: english<a class="ml-2" href="{{page.url|replace: "/en/","/es/"|replace: "index.html", ""}}">spanish</a>
+                        language: english<a class="ml-2" href="/es/">spanish</a>
                     {% when "es" %}
-                        idioma: español<a class="ml-2" href="{{page.url|replace: "/es/","/en/"|replace: "index.html", ""}}">inglés</a>
+                        idioma: español<a class="ml-2" href="/en/">inglés</a>
                 {% endcase %}
             </p>
             <ul>
@@ -29,7 +29,7 @@
                     <li>
                         <a href="/{{page.lang}}{{i.url}}">{{i.name}}</a>
                     </li>
-                {% endfor %}
+                {% endfor %}^
             </ul>
         </div>
     </div>

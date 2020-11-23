@@ -8,7 +8,7 @@
 {% unless page.contact %}
     <div class="bg-sec" id="contact-footer">
         <div class="container py-5">
-            <a href="/{{page.lang}}/contact/">
+            <a href="/{{page.lang}}/contact{% if page.lang == "es" %}o{% endif %}/">
                 <div class="ml-auto text-center">
                     <h3 class="text-white">{{cdata.heading}}
                         <span class="arr">→</span>
