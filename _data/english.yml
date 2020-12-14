@@ -28,12 +28,14 @@ items:
     paragraph: The Taqtyle team brings together a group of experienced professionals. Besides our in-house experts, we rely on a vast network of industry leaders from construction, architecture, and finance. Together, we are determined to build a better LoHi.
     items:
       - name: Alyssa Greeley
+        active: False
         role: Director of Acquisitions and Development
         mail: alyssa@taqtyle.com
         text: Alyssa directs all operational aspects of Taqtyle’s real estate activities and projects. She holds a Colorado Real Estate License and is a designated Realtor with multiple years of experience in the Colorado real estate market. Alyssa ensures effective and profitable developments by building positive relationships and working closely with strategic partners.
         img: /assets/img/team/alyssa-greeley.jpg
         linkedin: https://www.linkedin.com/in/alyssagreeley/
       - name: Dean Dovolis
+        active: True
         role: Architect
         text: Dean founded DJR Architecture in 1985 in the twin cities, Minnesota with an emphasis on affordable housing and community development. Dean continues to evolve the firm into a broad provider of international architectural services while still playing an active role in the local development of the twin cities.
         website-name: djrarch.com
@@ -42,6 +44,7 @@ items:
         linkedin: https://www.linkedin.com/in/markerjavec/
         img: /assets/img/team/Dean.jpg
       - name: Mark Erjavec
+        active: True
         role: Finance Partner
         text: Mark is a serial entrepreneur, investor, and fund manager with over 20 years of experience in finance and real estate. For Taqtyle, Mark takes care of strategic planning, risk management, operational oversight and investment decisions.
         website-name: mesabafinance.com
@@ -50,6 +53,7 @@ items:
         linkedin: https://www.linkedin.com/in/markerjavec/
         img: /assets/img/team/mark-headshot.jpg
       - name: Leslie Myles
+        active: True
         role: Construction Partner
         text:
         website-name: emergeconstruction.com

@@ -27,12 +27,14 @@ items:
     paragraph: El equipo de Taqtyle está integrado por profesionales experimentados. Además de nuestros expertos internos, contamos con una amplia red de líderes de la industria de construcción. arquitectura y finanzas. Juntos estamos decididos a construir un mejor LoHi.
     items:
       - name: Alyssa Greeley
+        active: False
         role: Directora de Adquisición y Desarollo
         mail: alyssa@taqtyle.com
         text: Alyssa está a cargo del aspecto operacional de todas las actividades y proyectos inmobiliarios de Taqtyle. Tiene una licencia en bienes raíces en Colorado y es una agente inmobiliaria con varios años de experiencia en el mercado de bienes raíces de Colorado. Alyssa se asegura de desarrollar proyectos efectivos y rentables, construyendo relaciones positivas y trabajando de la mano con socios estratégicos.
         img: /assets/img/team/alyssa-greeley.jpg
         linkedin: https://www.linkedin.com/in/alyssagreeley/
       - name: Dean Dovolis
+        active: True
         role: Arquitecto
         text: Dean fundó DJR Architecture en 1985 en las ciudades gemelas de Minnesota, haciendo gran énfasis en el desarrollo de viviendas y comunidades asequibles. Dean sigue haciendo evolucionar la firma con el propósito de convertirla en un amplio proveedor de servicios arquitectónicos internacionalmente, y al mismo tiempo, jugando un rol importante en el desarrollo local de las ciudades gemelas.
         website-name: djrarch.com
@@ -40,6 +42,7 @@ items:
         linkedin: https://www.linkedin.com/in/markerjavec/
         img: /assets/img/team/Dean.jpg
       - name: Mark Erjavec
+        active: True
         role: Socio de Finanzas
         text: Mark es un empresario en serie, inversor y gestor de fondos con más de 20 años de experiencia en finanzas y bienes raíces. En Taqtyle, Mark se encarga de la planificación estratégica, la gestión de riesgos, la supervisión de operaciones y las decisiones de inversión.
         website-name: mesabafinance.com
@@ -48,6 +51,7 @@ items:
         linkedin: https://www.linkedin.com/in/markerjavec/
         img: /assets/img/team/mark-headshot.jpg
       - name: Leslie Myles
+        active: True
         role: Socio de Construcción
         text:
         website-name: emergeconstruction.com

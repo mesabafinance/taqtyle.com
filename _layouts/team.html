@@ -29,23 +29,27 @@ layout: base
 <div class="section bg-light">
     <div class="container team-container">
         {% for i in data.items %}
-            {% assign test = forloop.index|modulo: 2 %}
-            {% if forloop.index == 3 %}
-                <h2 class="partners">Partners</h2>
-            {% endif %}
-            <div class="row pb-5 mb-5">
-                <div class="col-lg-7 bg-white p-sm-5">
-                    <div class="my-5 mx-md-5">
-                        <h4 class="mb-0">{{i.name}}</h4>
-                        <p class="text-dark font-weight-bold">{{i.role}}</p>
-                        <p class="mt-4">{{i.text}}</p>
-                        <p>
-                            <a href="{{i.website}}">{{i.website-name}}</a>
-                        </p>
+        {% if i.active %}
+            <div id="team-{% increment counter %}">
+                {% assign test = counter|modulo: 2 %}
+                {% if counter == 5 or counter == 2 %}
+                    <h2 class="partners">Partners</h2>
+                {% endif %}
+                <div class="row pb-5 mb-5">
+                    <div class="col-lg-7 bg-white p-sm-5">
+                        <div class="my-5 mx-md-5">
+                            <h4 class="mb-0">{{i.name}}</h4>
+                            <p class="text-dark font-weight-bold">{{i.role}}</p>
+                            <p class="mt-4">{{i.text}}</p>
+                            <p>
+                                <a href="{{i.website}}">{{i.website-name}}</a>
+                            </p>
+                        </div>
                     </div>
+                    <div class="col-lg-5 team-photo{% if test == 0 %} order-sm-first{% endif %}" style="background-image: url({{i.img}});"></div>
                 </div>
-                <div class="col-lg-5 team-photo{% if test == 0 %} order-sm-first{% endif %}" style="background-image: url({{i.img}});"></div>
             </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
