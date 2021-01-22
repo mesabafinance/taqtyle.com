@@ -1,3 +1,5 @@
+{% unless page.url contains "404" %}
+
 {% case page.lang %}
     {% when "en" %}
         {% assign nav = site.data.english.items.home.navigation %}
@@ -47,3 +49,5 @@
         </div>
     </nav>
 </div>
+
+{% endunless %}

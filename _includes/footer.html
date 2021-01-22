@@ -3,12 +3,14 @@
         {% assign cdata = site.data.english.items.contact %}
     {% when "es" %}
         {% assign cdata = site.data.spanish.items.contact %}
+    {% else %}
+        {% assign cdata = site.data.english.items.contact %}
 {% endcase %}
 
 {% unless page.contact %}
     <div class="bg-sec" id="contact-footer">
         <div class="container py-5">
-            <a href="/{{page.lang}}/contact{% if page.lang == "es" %}o{% endif %}/">
+            <a href="/{% if page.lang %}{{page.lang}}{% else %}en{% endif %}/contact{% if page.lang == "es" %}o{% endif %}/">
                 <div class="ml-auto text-center">
                     <h3 class="text-white">{{cdata.heading}}
                         <span class="arr">→</span>
@@ -25,7 +27,7 @@
         <div class="row p-5 text-center justify-content-center">
             {% if page.contact %}
                 <div class="col-sm-4">
-                    <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/pin.svg">
+                    <img alt="Address Icon" class="contact-icon mb-2" src="/assets/img/icons/pin.svg">
                     <p>
                         {{cdata.street}}
                         <br>
@@ -35,7 +37,7 @@
                 </div>
             {% endif %}
             <div class="col-md-4">
-                <img alt="Location" class="contact-icon mb-2" src="/assets/img/icons/mail.svg">
+                <img alt="Contact Icon" class="contact-icon mb-2" src="/assets/img/icons/mail.svg">
                 <p>
                     <a href="mailto:{{cdata.mail}}">{{cdata.mail}}</a>
                 </p>
