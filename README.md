@@ -17,8 +17,6 @@ All sites use the static site builder Jekyll to leverage speed of static vs dyna
 
 All website repositories are version controlled using git. Git is an open source tool available for all platforms. If this is your first time using git, check out the documentation and resources at https://git-scm.com/. Also consider searching for some additional intro resources on Google or YouTube in order to familiarize yourself with git.
 
-The repositories are hosted on GitHub as free, private repositories. They are available via the account accounts@mesabafinance.com. Get the password from Mark via the Accounts file on the Business Operations Drive.
-
 Make sure to keep your work on the `develop` branch. Only finished work, ready to be deployed, should ever go on to the `master` branch.
 
 ### Static site builder: Jekyll
@@ -95,7 +93,7 @@ branch="$(git rev-parse --abbrev-ref HEAD)"
 
 # Deploy master server
 if [[ $branch == "master" ]]; then
-    echo 'Deploying master branch to www.agrofundone.com'
+    echo 'Deploying master branch server'
     cd <your project root> && jekyll build b&& rsync -avP --delete-after --exclude '*robots.txt*' --force -e ssh <your project root>/_site/ <destination server>
     if [[ $? == 0 ]]; then
         echo 'Deploy successful'
