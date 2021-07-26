@@ -1,6 +1,5 @@
 ---
 layout: base
-bla: teh
 ---
 
 {% case page.lang %}
@@ -28,13 +27,79 @@ bla: teh
     <div class="container contact-container py-5 ,t-5">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-6 pt-5 mt-5">
-                <script charset="utf-8" src="//js.hsforms.net/forms/shell.js" type="text/javascript"></script>
-                <script>
-                  hbspt.forms.create({
-                    portalId: "8154313",
-                    formId: "{{data.hubspot_form}}"
-                });
-                </script>
+                <form class="mb-4"
+                id="contactForm"
+                action="{{data.form.redirect}}"
+                name="contact"
+                method="POST"
+                netlify>
+                    <p class="fw-semibold mb-1">{{data.form.iam}}<sup>*</sup></p>
+                    <select
+                        name="contact_category"
+                        class="form-control"
+                    >
+                        <option selected disabled>{{data.form.choose}}</option>
+                        {% for i in data.form.roles %}
+                        <option value="{{i| handleize}}">{{i}}</option>
+                        {% endfor %}
+                    </select>
+
+                    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+                        {{data.form.email}}
+                        <sup>*</sup>
+                    </label>
+                    <input
+                        name="email"
+                        type="email"
+                        class="form-control border-2 rounded-1"
+                        id="inputEmail"
+                        required
+                    />
+
+                    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+                        {{data.form.fname}}
+                        <sup>*</sup>
+                    </label>
+                    <input
+                        name="first_name"
+                        type="text"
+                        class="form-control border-2 rounded-1"
+                        id="inputFName"
+                        required
+                    />
+
+                    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+                        {{data.form.lname}}
+                        <sup>*</sup>
+                    </label>
+                    <input
+                        name="last_name"
+                        type="text"
+                        class="form-control border-2 rounded-1"
+                        id="inputLName"
+                        required
+                    />
+
+                    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+                        {{data.form.message}}
+                        <sup>*</sup>
+                    </label>
+                    <textarea
+                        name="message"
+                        class="form-control border-2 rounded-1"
+                        id="inputMessage"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn btn-primary mt-4 px-4">{{data.form.submit}}</button>
+                    <p class="mt-4">{{data.form.fields}}</p>
+                </form>
+                <div id="contactSuccess" class="d-none py-5">
+                    <h3 class="text-dark">{{data.form.success.heading}}</h1>
+                    <p class="lead mt-5">{{data.form.success.text}}</p>
+                </div>
+
             </div>
         </div>
     </div>
