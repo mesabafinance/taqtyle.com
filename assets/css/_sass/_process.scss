@@ -208,9 +208,9 @@
     margin-bottom: 0;
   }
 }
-/* For smaller screens (mobile) */
-@media (max-width: 767px) {
+/* For larger screens (mobile) */
+@media (min-width: 768px) {
   .pl-sm-4 {
-    margin-bottom: 20px; /* Smaller margin for mobile */
+    margin-bottom: 20px; /* Larger margin for mobile */
   }
 }
