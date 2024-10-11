@@ -72,7 +72,7 @@ items:
             paragraph: Sign up for our mailing list and get the latest news and developments directly to your inbox.
     process:
         heading: our development process
-        paragraph: <video width='100%' controls><source src='/assets/img/taqtyle-explainer-video_4.mp4' type='video/mp4'>Your browser does not support the video tag.</video>We ensure a streamlined and effective development process by making our stakeholders a top priority from start to finish.
+        paragraph: <iframe width="100%" height="315" src="https://www.youtube.com/embed/NaJ9DZVTEEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>We ensure a streamlined and effective development process by making our stakeholders a top priority from start to finish.
         step_1:
             heading: Step 01
             subheading: Research
