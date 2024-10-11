@@ -208,4 +208,19 @@
     margin-bottom: 0;
   }
 }
+/* For larger screens */
+@media (min-width: 768px) {
+    .pl-sm-4 {
+        padding-left: 1.5rem; /* Adjust padding as needed */
+        margin-bottom: 40px; /* Add bottom margin to prevent overlap */
+    }
+}
+
+/* For smaller screens (mobile) */
+@media (max-width: 767px) {
+    .pl-sm-4 {
+        padding-left: 0; /* Adjust to zero or small padding for mobile */
+        margin-bottom: 20px; /* Adjust as needed for mobile */
+    }
+}
 
