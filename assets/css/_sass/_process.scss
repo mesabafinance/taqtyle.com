@@ -208,3 +208,9 @@
     margin-bottom: 0;
   }
 }
+/* For smaller screens (mobile) */
+@media (max-width: 767px) {
+  .pl-sm-4 {
+    margin-bottom: 20px; /* Smaller margin for mobile */
+  }
+}
