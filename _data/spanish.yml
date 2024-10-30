@@ -18,7 +18,7 @@ items:
                   bg: /assets/img/team.jpg
                 - url: /equipo/
                   name: nuestro equipo
-                  bg: /assets/img/work-space.jpg
+                  bg: /assets/img/work-space-2.jpg
                 - url: /contacto/
                   name: contáctenos
                   bg: /assets/img/contact.jpg
