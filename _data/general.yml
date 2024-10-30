@@ -48,14 +48,6 @@ items:
         mail: mark@taqtyle.com
         linkedin: https://www.linkedin.com/in/markerjavec/
         img: /assets/img/team/mark-headshot.jpg
-      - name: Leslie Myles
-        role: Construction Partner
-        text:
-        website-name: emergeconstruction.com
-        website: https://www.emergeconstruction.com/
-        mail: mark@taqtyle.com
-        linkedin: https://www.linkedin.com/in/markerjavec/
-        img: /assets/img/team/Leslie-myles-contracter.jpg
 
   vision:
     heading: our vision
