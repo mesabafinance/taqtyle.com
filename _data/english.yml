@@ -52,15 +52,6 @@ items:
               mail: mark@taqtyle.com
               linkedin: https://www.linkedin.com/in/markerjavec/
               img: /assets/img/team/mark-headshot.jpg
-            - name: Leslie Myles
-              active: True
-              role: Construction Partner
-              text:
-              website-name: emergeconstruction.com
-              website: https://www.emergeconstruction.com/
-              mail: mark@taqtyle.com
-              linkedin: https://www.linkedin.com/in/markerjavec/
-              img: /assets/img/team/Leslie-myles-contracter.jpg
 
     vision:
         heading: our vision
@@ -200,7 +191,7 @@ items:
         paragraph: Our team is excited to hear from you. Reach out to us any time via phone or simply send us a message below. We will get back to you shortly.
         street: "1041 Grand Ave #300"
         city: St. Paul, Minnesota, 55105
-        phone: (720) 780-5665
+        phone: (651) 800-1977
         mail: hello@taqtyle.com
         form:
             iam: I am a...
